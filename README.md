@@ -6,9 +6,9 @@
 ```
 一只鬆の小站 RavelloH's Blog
 一只鬆 RavelloH
-https://sotkg.cn https://ravelloh.top
+https://new.sotkg.link https://ravelloh.top
 sotkg.cn ravelloh.top
-https://sotkg.cn/assets/images/android-chrome-512x512.png https://ravelloh.top/assets/images/android-chrome-512x512.png
+https://new.sotkg.link/assets/images/android-chrome-512x512.png https://ravelloh.top/assets/images/android-chrome-512x512.png
 ${nav1} images
 ${navName1} IMAGES
 ${navIcon1} ri:image-fill
