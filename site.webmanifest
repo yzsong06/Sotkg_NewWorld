@@ -3,7 +3,7 @@
     "start_url": "/index.html?mode=pwa",
     "display": "standalone",
     "background_color": "#1e1e1e",
-    "description": "A blog of ${authorName}",
+    "description": "A blog of 一只鬆",
     "theme_color": "#1e1e1e",
     "launch_handler": {
         "client_mode": "auto"
