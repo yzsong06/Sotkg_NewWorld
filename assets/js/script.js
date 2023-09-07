@@ -812,7 +812,7 @@ function refreshInfo(runTime) {
     } else {
         switchElementContent('#cookie-state', '<span class="yellow">未启用</span>');
     }
-    switchElementContent('#up-time', getTime('DD天mm分钟', '${siteStartTime}'));
+    switchElementContent('#up-time', getTime('DD天mm分钟', '9/01/2022 11:54:14'));
     switchElementContent('#loading-time', docCookies.getItem('lastLoadTime'));
     if (trustDomain.indexOf(window.location.hostname) == -1) {
         switchElementContent(

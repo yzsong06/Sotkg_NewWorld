@@ -6,7 +6,7 @@ loadingResources = [];
 errorList = [];
 domLoadShade = document.querySelector('#load-shade');
 trustDomain = [
-    '${siteDomain}'
+    'sotkg.cn'
 ];
 musicApiList = ['https://music.api.ravelloh.top/cloudsearch?keywords='];
 musicAvailableApiList = [];

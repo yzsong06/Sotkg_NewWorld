@@ -65,7 +65,7 @@ function getDefaultWorkInner() {
         document.querySelectorAll('.listprogram').length
     }个作品/项目。</span>
     <div class="button-list">
-    <a class="button" href="https://github.com/${githubUserName}?tab=repositories"><span class="i_small ri:github-line"></span> Github ></a>
+    <a class="button" href="https://github.com/yzsong06?tab=repositories"><span class="i_small ri:github-line"></span> Github ></a>
     </div>
     `;
 }

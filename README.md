@@ -3,7 +3,27 @@
 # RTheme - v3.0.0
 
 新一代现代化极客风多功能横版静态博客主题框架  
-
+```
+一只鬆の小站 RavelloH's Blog
+一只鬆 RavelloH
+https://sotkg.cn https://ravelloh.top
+sotkg.cn ravelloh.top
+https://sotkg.cn/assets/images/android-chrome-512x512.png https://ravelloh.top/assets/images/android-chrome-512x512.png
+${nav1} images
+${navName1} IMAGES
+${navIcon1} ri:image-fill
+${nav2} games
+${navName2} GAMES
+${navIcon2} ri:gamepad-fill
+${nav3} unset
+${navName3} unset
+${navIcon3} unset
+${sentence} Welcome here and fell free to check it out ...
+yzsong06 RavelloH
+yzsong06@outlook.com ravelloh@outlook.com
+2022 2019
+9/01/2022 11:54:14 2/03/2019 20:52:00
+```
 // New generation modern geek style multifunctional horizontal static blog theme framework. //  
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/RavelloH/RTheme?style=for-the-badge)

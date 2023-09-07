@@ -10,7 +10,7 @@ structurePrograssBar =
 originIconsLeftContext = `
     <nav>
         <a style="--i: 1" id="icon-about" href="#about" onclick="openInfoBar('info');return false;" aria-label="about this page"><span class="i ri:file-info-line"></span></a>
-        <a style="--i: 2" id="icon-github" href="http://github.com/${githubUserName}" target="_blank" rel="noreferrer" aria-label="my github"><span class="i ri:github-fill"></span></a>
+        <a style="--i: 2" id="icon-github" href="http://github.com/yzsong06" target="_blank" rel="noreferrer" aria-label="my github"><span class="i ri:github-fill"></span></a>
         <a style="--i: 3" id="icon-rss" onclick="openInfoBar('feed')" aria-label="rss"><span class="i ri:rss-fill"></span></a>
     </nav>`;
 structureErrorViewmap =
@@ -148,7 +148,7 @@ function structureMusicExport(e) {
 }
 function getMailFeedbackButton() {
     return (
-        "<a class='button' href='mailto:${authorMail}?subject=[错误反馈]网站资源错误&body=错误地址:" +
+        "<a class='button' href='mailto:yzsong06@outlook.com?subject=[错误反馈]网站资源错误&body=错误地址:" +
         window.location.pathname +
         "'>邮件反馈</a>"
     );

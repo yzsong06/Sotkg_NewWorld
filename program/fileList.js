@@ -59,7 +59,7 @@ var filePath = path.resolve(targetPath);
 readDirRecur(filePath, function (filePath) {
     console.log('done', new Date() - timeStart);
     removeDuplicateBeginning(fileList).forEach((e) => {
-        dataStr += `${siteDomain}${e}\n`;
+        dataStr += `sotkg.cn${e}\n`;
     });
     console.log(dataStr);
     fs.writeFile(preserveFile, dataStr, 'utf8', (err) => {});

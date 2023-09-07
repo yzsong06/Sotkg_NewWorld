@@ -1,5 +1,5 @@
 {
-    "name": "${siteName}",
+    "name": "一只鬆の小站",
     "start_url": "/index.html?mode=pwa",
     "display": "standalone",
     "background_color": "#1e1e1e",
