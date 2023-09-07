@@ -18,7 +18,7 @@ ${navIcon2} ri:gamepad-fill
 ${nav3} unset
 ${navName3} unset
 ${navIcon3} unset
-${sentence} Welcome here and fell free to check it out ...
+心有多宽，世界就有多远 Welcome here and fell free to check it out ...
 yzsong06 RavelloH
 yzsong06@outlook.com ravelloh@outlook.com
 2022 2019
