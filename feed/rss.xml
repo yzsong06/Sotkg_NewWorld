@@ -4,11 +4,7 @@
         <title>Sotkg's Blog / 一只鬆の小站</title>
         <link>http://sotkg.cn/</link>
         <description>RSS - 博客文章订阅更新</description>
-<<<<<<< HEAD
-        <lastBuildDate>Fri, 08 Sep 2023 03:38:24 GMT</lastBuildDate>
-=======
-        <lastBuildDate>Fri, 08 Sep 2023 01:43:32 GMT</lastBuildDate>
->>>>>>> 7b56a6a5329632185dbfb100e218537109d1b932
+        <lastBuildDate>Fri, 08 Sep 2023 03:42:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/RavelloH/local-feed-generation</generator>
         <language>zh</language>
