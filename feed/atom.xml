@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://ravelloh.top/</id>
-    <title>RavelloH's Blog / RavelloH的博客</title>
-    <updated>2023-09-08T00:47:50.981Z</updated>
+    <id>http://sotkg.cn/</id>
+    <title>Sotkg's Blog / 一只鬆の小站</title>
+    <updated>2023-09-08T01:11:04.806Z</updated>
     <generator>https://github.com/RavelloH/local-feed-generation</generator>
     <author>
         <name>一只鬆</name>
         <email>yzsong06@outlook.com</email>
         <uri>https://sotkg.cn/</uri>
     </author>
-    <link rel="alternate" href="http://ravelloh.top/"/>
-    <link rel="self" href="https://ravelloh.top/feed/atom.xml"/>
+    <link rel="alternate" href="http://sotkg.cn/"/>
+    <link rel="self" href="https://sotkg.cn/feed/atom.xml"/>
     <subtitle>RSS - 博客文章订阅更新</subtitle>
-    <logo>https://ravelloh.top/assets/images/avatar.jpg</logo>
-    <icon>https://ravelloh.top/favicon.ico</icon>
-    <rights>Copyright © 2019 - 2023 RavelloH. All rights reserved.</rights>
+    <logo>https://sotkg.cn/assets/images/avatar.jpg</logo>
+    <icon>https://sotkg.cn/favicon.ico</icon>
+    <rights>Copyright © 2022 - 2023 Yzsong06. All rights reserved.</rights>
     <entry>
         <title type="html"><![CDATA[]]></title>
         <id>https://sotkg.cnundefined</id>

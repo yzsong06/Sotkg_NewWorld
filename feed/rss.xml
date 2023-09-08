@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>RavelloH's Blog / RavelloH的博客</title>
-        <link>http://ravelloh.top/</link>
+        <title>Sotkg's Blog / 一只鬆の小站</title>
+        <link>http://sotkg.cn/</link>
         <description>RSS - 博客文章订阅更新</description>
-        <lastBuildDate>Fri, 08 Sep 2023 00:47:50 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 08 Sep 2023 01:11:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/RavelloH/local-feed-generation</generator>
         <language>zh</language>
         <image>
-            <title>RavelloH's Blog / RavelloH的博客</title>
-            <url>https://ravelloh.top/assets/images/avatar.jpg</url>
-            <link>http://ravelloh.top/</link>
+            <title>Sotkg's Blog / 一只鬆の小站</title>
+            <url>https://sotkg.cn/assets/images/avatar.jpg</url>
+            <link>http://sotkg.cn/</link>
         </image>
-        <copyright>Copyright © 2019 - 2023 RavelloH. All rights reserved.</copyright>
-        <atom:link href="https://ravelloh.top/feed/rss.xml" rel="self" type="application/rss+xml"/>
+        <copyright>Copyright © 2022 - 2023 Yzsong06. All rights reserved.</copyright>
+        <atom:link href="https://sotkg.cn/feed/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
             <link>https://sotkg.cnundefined</link>
             <guid>https://sotkg.cnundefined</guid>
