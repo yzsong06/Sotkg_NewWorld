@@ -12,10 +12,10 @@ sotkg.cn sotkg.cn
 https://sotkg.cn/assets/images/android-chrome-512x512.png https://sotkg.cn/assets/images/android-chrome-512x512.png
 ${nav1} images
 ${navName1} IMAGES
-${navIcon1} ri:image-fill
-${nav2} games
-${navName2} GAMES
-${navIcon2} ri:gamepad-fill
+ri:image-fill ri:image-fill
+games games
+GAMES GAMES
+ri:gamepad-fill ri:gamepad-fill
 ${nav3} unset
 ${navName3} unset
 ${navIcon3} unset
