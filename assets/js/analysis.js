@@ -5,7 +5,7 @@ function initAnalytics() {
     // 可选Umami/百度统计
     // 使用哪个，取消注释哪个，并修改相关配置信息
 
-    // umamiAnalytics();
+    umamiAnalytics();
     // baiduAnalysis();
 }
 
@@ -17,12 +17,12 @@ function umamiAnalytics() {
         addEvent(getUmamiEventList());
         var umami = document.createElement('script');
         // 如果使用Umami，将下方848f2596-81ce-4c69-a91c-5c78ad85915b替换为你的site id
-        umami.setAttribute('data-website-id', '848f2596-81ce-4c69-a91c-5c78ad85915b');
+        umami.setAttribute('data-website-id', '06be3bd3-bdaf-4c6f-af8e-2115863261e2');
         if (docCookies.getItem('settingEnableUmamiCache') == 'true') {
             umami.setAttribute('data-cache', 'true');
         }
         // 更改下方src为你的umami统计脚本位置
-        umami.src = 'https://analytics.sotkg.cn/script.js';
+        umami.src = 'https://umami.sotkg.cn/script.js';
         var an = document.getElementsByTagName('script')[0];
         an.parentNode.insertBefore(umami, an);
     })();
@@ -86,17 +86,17 @@ function getUmamiEventList() {
 function getRealTimeVisitors(mode = 'return') {
     // Umami 实时访客API，按需接入
     // 接入后，注释下方的return false
-    return false
+    // return false
 
 
-    let site = 'https://analytics.sotkg.cn';
+    let site = 'https://umami.sotkg.cn';
 
     // 你的共享链接Token
     let token =
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjljM2Y1OWJiLTE0OGQtNTk4OC1hY2NjLTdmNDhjOTJhOWIzMiIsIndlYnNpdGVJZCI6ImY0N2UyZGMzLWY2YmYtNGQ3Yy1iMzExLTc0NjdiYjFiMTdlNSIsImhvc3RuYW1lIjoibG9jYWxob3N0IiwiYnJvd3NlciI6ImNocm9tZSIsIm9zIjoiTGludXgiLCJkZXZpY2UiOiJsYXB0b3AiLCJzY3JlZW4iOiI3NTN4MTIwNSIsImxhbmd1YWdlIjoiemgtQ04iLCJjb3VudHJ5IjoiQ04iLCJzdWJkaXZpc2lvbjEiOiJDTi1TRCIsInN1YmRpdmlzaW9uMiI6bnVsbCwiY2l0eSI6IlFpbmdkYW8iLCJjcmVhdGVkQXQiOiIyMDIzLTA2LTExVDA3OjA4OjU4LjAwMFoiLCJpYXQiOjE2ODY0NjczMzd9.Qli8kEukIWdN3nV8ioWIqaPQn0m4b3loIddLZo-9HDE';
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3ZWJzaXRlSWQiOiIwNmJlM2JkMy1iZGFmLTRjNmYtYWY4ZS0yMTE1ODYzMjYxZTIiLCJpYXQiOjE2OTQxNTY1MTl9.Zv0NfZEuMV4B2Js8jy5JIiBGY4cC5ukb8byKG4Oxq7g';
 
     // 你的站点idAPI
-    let apiURL = site + '/api/websites/f47e2dc3-f6bf-4d7c-b311-7467bb1b17e5/active';
+    let apiURL = site + '/api/websites/06be3bd3-bdaf-4c6f-af8e-2115863261e2/active';
     fetch(apiURL, {
         headers: {
             'x-umami-share-token': token,
@@ -114,19 +114,8 @@ function getRealTimeVisitors(mode = 'return') {
 }
 
 function getPageVisitors(url = window.location.pathname) {
-    // Umami 访问量统计API
-    // 可自行部署，仓库：https://github.com/RavelloH/umami-api-route
-    // 部署后，删除下方代码
-    return Promise.resolve({
-        "pageviews": {
-            "value": "未接入服务"
-        }
-    });
-    // 部署后，删除上方代码
-
-
     return new Promise((resolve, reject) => {
-        let apiURL = `https://analytics.api.sotkg.cn/pageview?url=${url}`;
+        let apiURL = `https://umami.api.sotkg.cn/pageview?url=${url}`;
         fetch(apiURL)
         .then((response) => response.json())
         .then((data) => {

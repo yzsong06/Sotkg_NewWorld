@@ -821,13 +821,13 @@ function refreshInfo(runTime) {
         );
     }
     switchElementContent('#url', window.location.pathname);
-    /* 接入Umami
+    
     if (docCookies.getItem('settingEnableUmamiAnalytics') !== 'false' && runTime == 1) {
         getPageVisitors().then((data) =>
             switchElementContent('#url-visitors', data['pageviews'].value),
         );
     }
-    */
+    
     接入Uptime模块
     if (runTime == 1) {
         loadUptime().then((message) => {
