@@ -828,7 +828,6 @@ function refreshInfo(runTime) {
         );
     }
     
-    接入Uptime模块
     if (runTime == 1) {
         loadUptime().then((message) => {
             let str = '';

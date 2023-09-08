@@ -32,12 +32,10 @@ function structureInfobarInfo() {
         </span>
     </div>
     
-    <!-- 需要先配置Umami
     <div class="flex-items">
         <strong> 单页面访问量: </strong> <span id="url-visitors"><div class="circle-loader"></div>
         </span>
     </div>
-    -->
     
     <div class="flex-items">
         <strong> RTheme框架状态: </strong> <span id="theme-state"><div class="circle-loader"></div>
@@ -192,7 +190,7 @@ function valueSettingItems() {
             '',
         ],
         */
-        /*
+        
         [
             '启用Umami Analytics分析器',
             '允许与自建Umami服务通信，以统计页面访问情况',
@@ -205,10 +203,10 @@ function valueSettingItems() {
             'EnableUmamiEvents',
         ],
         ['启用Umami API', '允许从Umami服务获取实时访客量等信息', 'EnableUmamiAPI'],
-        */
-        /*
+        
+        
         ['启用Twikoo评论', '允许与评论服务器通信，以实现评论操作', 'EnableComment'],
-        */
+        
         [
             '接管下载事件',
             '允许使用主题框架下载管理器替代浏览器下载，显示更多信息',
@@ -226,9 +224,9 @@ function valueSettingItems() {
             'EnableMusicStateStorage',
         ],
         ['启用自动登录', '允许在访问时自动以登录身份重新刷新令牌', 'EnableAutoLogin'],
-        /*
+        
         ['启用站点状态显示', '允许访问Uptime服务以显示站点服务状态', 'EnableUptime'],
-        */
+        
         ['启用目录高亮', '在显示目录时自动高亮正在阅读的位置', 'EnableMenuHighlight'],
         ['启用高级超链接', '允许渲染部分高级形式超链接', 'EnableAdvanceLink'],
         ['启用标题重组', '在页面加载时自动重组标题，以提供高级锚点功能', 'EnableUpdateMenu'],
