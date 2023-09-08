@@ -161,7 +161,11 @@ node fileList.js
 
 ## 依赖  
 主题依赖以下项目：  
-
+cd program
+npm install
+node search.js
+node feed.js
+node fileList.js
 [https://github.com/RavelloH/RPageSearch](https://github.com/RavelloH/RPageSearch)   
 [https://github.com/RavelloH/markdown-it-api](https://github.com/RavelloH/markdown-it-api)  
 [https://github.com/RavelloH/local-sitemap-generation](https://github.com/RavelloH/local-sitemap-generation)  

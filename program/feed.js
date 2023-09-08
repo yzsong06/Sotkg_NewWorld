@@ -3,7 +3,7 @@ const fs = require('fs');
 
 const dataFilePath = '../assets/data/search.json';
 const storagePath = '../feed/';
-const siteDomain = 'https://sotkg.cn';
+const siteDomain = 'https://sotkg.cn/';
 const authorINFO = {
     name: '一只鬆',
     email: 'yzsong06@outlook.com',
