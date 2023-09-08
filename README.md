@@ -35,7 +35,6 @@ yzsong06@outlook.com ravelloh@outlook.com
 ## 预览  
 
 预览: [RavelloH's Blog](https://sotkg.cn/) / [备用](https://ravelloh.github.io/)
-
 ![Screenshot_20230819_163309_com android chrome](https://github.com/RavelloH/RTheme/assets/68409330/b83fe77d-82ad-4d96-a1ba-c26e69f4eb1f)
 ![Screenshot_20230819_163340_com android chrome](https://github.com/RavelloH/RTheme/assets/68409330/8dda9083-2096-47f7-a868-565fc53a8ece)
 ![Screenshot_20230819_163447_com android chrome](https://github.com/RavelloH/RTheme/assets/68409330/d96d3c0d-c98a-4fc3-835a-57f2020e7bf7)
