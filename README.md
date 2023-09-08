@@ -7,7 +7,7 @@ https://markdown.api.sotkg.cn/?url=xxx
 ```
 一只鬆の小站 RavelloH's Blog
 一只鬆 RavelloH
-https://sotkg.cn https://sotkg.cn
+https://sotkg.cn/ https://sotkg.cn/
 sotkg.cn sotkg.cn
 https://sotkg.cn/assets/images/android-chrome-512x512.png https://sotkg.cn/assets/images/android-chrome-512x512.png
 ${nav1} images
