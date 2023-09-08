@@ -144,7 +144,7 @@ function loadUptime() {
     }
     if (typeof uptimeData == 'undefined') {
         return new Promise((resolve, reject) => {
-            let site = 'https://uptime.api.ravelloh.top';
+            let site = 'https://uptime.api.sotkg.cn';
             fetch(site, {})
             .then((response) => response.json())
             .then((data) => {

@@ -301,7 +301,7 @@ function initComment() {
     twikoo
         .init({
             // 这里填写你的envId
-            envId: '',
+            envId: 'https://twikoo.sotkg.cn',
             el: '#tcomment',
             onCommentLoaded: function () {
                 addMessageBarQueue(

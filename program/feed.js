@@ -3,11 +3,11 @@ const fs = require('fs');
 
 const dataFilePath = '../assets/data/search.json';
 const storagePath = '../feed/';
-const siteDomain = 'https://ravelloh.top';
+const siteDomain = 'https://sotkg.cn';
 const authorINFO = {
-    name: 'RavelloH',
-    email: 'ravelloh@outlook.com',
-    link: 'https://ravelloh.top/',
+    name: '一只鬆',
+    email: 'yzsong06@outlook.com',
+    link: 'https://sotkg.cn/',
 };
 
 function HTMLDecode(str) {

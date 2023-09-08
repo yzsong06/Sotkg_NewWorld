@@ -70,11 +70,10 @@ function structureInfobarInfo() {
     <hr>
     <div id="alert-info"></div>
     
-    <!-- 需要先配置Uptime
     <div class="full center" id="uptime-list">
     <span class="info-warning full center"><span class="i_small ri:swap-line"></span> 正在拉取页面状态信息...</span>
     </div>
-    -->
+    
     `;
 }
 
