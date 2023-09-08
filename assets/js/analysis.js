@@ -22,7 +22,7 @@ function umamiAnalytics() {
             umami.setAttribute('data-cache', 'true');
         }
         // 更改下方src为你的umami统计脚本位置
-        umami.src = 'https://analytics.ravelloh.top/script.js';
+        umami.src = 'https://analytics.sotkg.cn/script.js';
         var an = document.getElementsByTagName('script')[0];
         an.parentNode.insertBefore(umami, an);
     })();
@@ -89,7 +89,7 @@ function getRealTimeVisitors(mode = 'return') {
     return false
 
 
-    let site = 'https://analytics.ravelloh.top';
+    let site = 'https://analytics.sotkg.cn';
 
     // 你的共享链接Token
     let token =
@@ -126,7 +126,7 @@ function getPageVisitors(url = window.location.pathname) {
 
 
     return new Promise((resolve, reject) => {
-        let apiURL = `https://analytics.api.ravelloh.top/pageview?url=${url}`;
+        let apiURL = `https://analytics.api.sotkg.cn/pageview?url=${url}`;
         fetch(apiURL)
         .then((response) => response.json())
         .then((data) => {

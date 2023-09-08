@@ -72,7 +72,7 @@ function getDefaultWorkInner() {
 
 // MD转HTML
 async function getMarkdownToHTML(url, name) {
-    let data = await (await fetch('https://markdown.api.ravelloh.top/?url=' + url)).text();
+    let data = await (await fetch('https://markdown.api.sotkg.cn/?url=' + url)).text();
     if (name == displayItem) {
         switchElementContent('#markdown-area', data);
         setTimeout(() => {
@@ -587,7 +587,7 @@ function loadLinkBox() {
         e.outerHTML = `
         <div class="link-box">
             <a href='${e.href}' class='no-effect' target='_blank'>
-            <img src="https://screenshot.ravelloh.top/?viewport=1000x1000&cache=864000&await=1000&url=${e.href}" class="no-zoom reset">
+            <img src="https://screenshot.sotkg.cn/?viewport=1000x1000&cache=864000&await=1000&url=${e.href}" class="no-zoom reset">
             <div class="link-describe">
                 <span class="link-name"><span class='i_small ri:link'></span> ${e.innerHTML}</span>
                 <span class="one-line line-href">${e.href}</span>

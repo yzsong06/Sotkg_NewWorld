@@ -2,14 +2,14 @@
 
 # RTheme - v3.0.0
 npx http-server -c-1
-https://markdown.api.ravelloh.top/?url=xxx
+https://markdown.api.sotkg.cn/?url=xxx
 新一代现代化极客风多功能横版静态博客主题框架
 ```
 一只鬆の小站 RavelloH's Blog
 一只鬆 RavelloH
-https://sotkg.cn https://ravelloh.top
-sotkg.cn ravelloh.top
-https://sotkg.cn/assets/images/android-chrome-512x512.png https://ravelloh.top/assets/images/android-chrome-512x512.png
+https://sotkg.cn https://sotkg.cn
+sotkg.cn sotkg.cn
+https://sotkg.cn/assets/images/android-chrome-512x512.png https://sotkg.cn/assets/images/android-chrome-512x512.png
 ${nav1} images
 ${navName1} IMAGES
 ${navIcon1} ri:image-fill
@@ -34,7 +34,7 @@ yzsong06@outlook.com ravelloh@outlook.com
   
 ## 预览  
 
-预览: [RavelloH's Blog](https://ravelloh.top/) / [备用](https://ravelloh.github.io/)
+预览: [RavelloH's Blog](https://sotkg.cn/) / [备用](https://ravelloh.github.io/)
 
 ![Screenshot_20230819_163309_com android chrome](https://github.com/RavelloH/RTheme/assets/68409330/b83fe77d-82ad-4d96-a1ba-c26e69f4eb1f)
 ![Screenshot_20230819_163340_com android chrome](https://github.com/RavelloH/RTheme/assets/68409330/8dda9083-2096-47f7-a868-565fc53a8ece)
@@ -131,7 +131,7 @@ RTheme使用Github Actions在云端自动部署，无需本地干预，即可自
 
 ### 内置高级下载器
 主题内置下载器，提高整体感。你可以在文章中使用。  
-详阅[#箱式下载盒](https://ravelloh.top/articles/20230815/#%E7%AE%B1%E5%BC%8F%E4%B8%8B%E8%BD%BD%E7%9B%92)
+详阅[#箱式下载盒](https://sotkg.cn/articles/20230815/#%E7%AE%B1%E5%BC%8F%E4%B8%8B%E8%BD%BD%E7%9B%92)
 ![Screenshot_20230819_183617_com kiwibrowser browser](https://github.com/RavelloH/RTheme/assets/68409330/5d32c6bf-2b41-46b1-b898-09cb185e8ccd)
 
 ---
@@ -139,7 +139,7 @@ RTheme使用Github Actions在云端自动部署，无需本地干预，即可自
 ## 使用  
 虽然此主题独立于其他任何静态博客生成器，不过作为标榜属于极客的主题，它使用模板化设计，你可以使用全局替换快速进行个性化配置。
 
-> 参阅[#部署](https://ravelloh.top/articles/20230815/#部署)  
+> 参阅[#部署](https://sotkg.cn/articles/20230815/#部署)  
 > 主题部署成功后，将包含一篇默认的Hello World的文章，其中包含语法示例与文章编发流程。
 
 ## 开发  

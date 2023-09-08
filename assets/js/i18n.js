@@ -510,17 +510,17 @@ function structureLayoutUserbar() {
 function structureInfobarFeed() {
     return `
     <div class="full" id="feed-list">
-    <a href="https://ravelloh.top/feed/rss.xml" class="no-effect" target="_blank">
+    <a href="https://sotkg.cn/feed/rss.xml" class="no-effect" target="_blank">
     <div>
         <span class="i ri:rss-fill"></span> <span>RSS</span>
     </div>
     </a>
-    <a href="https://ravelloh.top/feed/atom.xml" class="no-effect" target="_blank">
+    <a href="https://sotkg.cn/feed/atom.xml" class="no-effect" target="_blank">
     <div>
         <span class="i ri:reactjs-fill"></span> <span>Atom</span>
     </div>
     </a>
-    <a href="https://ravelloh.top/feed/feed.json" class="no-effect" target="_blank">
+    <a href="https://sotkg.cn/feed/feed.json" class="no-effect" target="_blank">
     <div>
         <span class="i ri:braces-fill"></span> <span>JSON Feed</span>
     </div>

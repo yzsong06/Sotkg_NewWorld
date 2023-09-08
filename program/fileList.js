@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const siteDomain = 'https://ravelloh.top/';
+const siteDomain = 'https://sotkg.cn/';
 const targetPath = '../';
 const preserveFile = '../assets/data/urlList.txt';
 
