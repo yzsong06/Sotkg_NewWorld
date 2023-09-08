@@ -3,7 +3,7 @@
 # RTheme - v3.0.0
 npx http-server -c-1
 https://markdown.api.ravelloh.top/?url=xxx
-新一代现代化极客风多功能横版静态博客主题框架.
+新一代现代化极客风多功能横版静态博客主题框架
 ```
 一只鬆の小站 RavelloH's Blog
 一只鬆 RavelloH
