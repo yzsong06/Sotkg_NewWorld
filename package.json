@@ -4,7 +4,8 @@
   "description": "新一代现代化极客风多功能横版静态博客主题框架",
   "main": "program/search.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd program && node search.js && node feed.js && node fileList.js"
   },
   "repository": {
     "type": "git",
