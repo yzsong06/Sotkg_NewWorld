@@ -1,10 +1,10 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "RavelloH's Blog / RavelloH的博客",
-    "home_page_url": "http://ravelloh.top/",
-    "feed_url": "https://ravelloh.top/feed/feed.json",
+    "title": "Sotkg Blog | 一只鬆的小站",
+    "home_page_url": "http://sotkg.cn/",
+    "feed_url": "https://sotkg.cn/feed/feed.json",
     "description": "RSS - 博客文章订阅更新",
-    "icon": "https://ravelloh.top/assets/images/avatar.jpg",
+    "icon": "https://sotkg.cn/assets/images/avatar.jpg",
     "author": {
         "name": "一只鬆",
         "url": "https://sotkg.cn/"

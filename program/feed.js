@@ -24,19 +24,19 @@ function HTMLDecode(str) {
 }
 
 const feed = new Feed({
-    title: "RavelloH's Blog / RavelloH的博客",
+    title: "Sotkg's Blog / 一只鬆の小站",
     description: 'RSS - 博客文章订阅更新',
-    id: 'http://ravelloh.top/',
-    link: 'http://ravelloh.top/',
+    id: 'http://sotkg.cn/',
+    link: 'http://sotkg.cn/',
     language: 'zh',
-    image: 'https://ravelloh.top/assets/images/avatar.jpg',
-    favicon: 'https://ravelloh.top/favicon.ico',
-    copyright: `Copyright © 2019 - ${new Date().getFullYear()} RavelloH. All rights reserved.`,
+    image: 'https://sotkg.cn/assets/images/avatar.jpg',
+    favicon: 'https://sotkg.cn/favicon.ico',
+    copyright: `Copyright © 2022 - ${new Date().getFullYear()} Yzsong06. All rights reserved.`,
     generator: 'https://github.com/RavelloH/local-feed-generation',
     feedLinks: {
-        json: 'https://ravelloh.top/feed/feed.json',
-        atom: 'https://ravelloh.top/feed/atom.xml',
-        rss: 'https://ravelloh.top/feed/rss.xml',
+        json: 'https://sotkg.cn/feed/feed.json',
+        atom: 'https://sotkg.cn/feed/atom.xml',
+        rss: 'https://sotkg.cn/feed/rss.xml',
     },
     author: authorINFO,
 });
