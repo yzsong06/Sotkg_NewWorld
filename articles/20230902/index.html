@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Hello World | 一只鬆の小站</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="Hello World | 一只鬆の小站" />
+    <meta name="author" content="一只鬆" />
+    <meta name="pagetype" content="articles-context" />
+    <meta name="theme-color" content="#111111" />
+    <meta property="og:title" content="一只鬆の小站">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sotkg.cn/">
+    <meta property="og:image" content="https://sotkg.cn/assets/images/android-chrome-512x512.png">
+
+    <!-- Preload -->
+    <link rel="preload" href="../../assets/fonts/ri.woff2" as="font" crossorigin>
+    <link rel="preload" href="../../assets/fonts/Furore.ttf" as="font" crossorigin>
+    <link rel="preload" href="../../assets/js/script.js" as="script">
+    <link rel="preload" href="../../assets/js/i18n.js" as="script">
+    <link rel="preload" href="../../assets/js/moudle.js" as="script">
+    <link rel="preload" href="../../assets/js/display.js" as="script">
+    <link rel="preload" href="../../assets/css/style.css" as="style" />
+    <link rel="preload" href="../../assets/css/iconfont.css" as="style" />
+    <link rel="preload" href="../../assets/images/avatar.png" as="image" />
+    <script defer type="text/javascript" src="../../assets/js/loading.js"></script>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../../assets/css/iconfont.css" type="text/css" />
+    <noscript>
+        <style type="text/css" media="all">
+            .loading {
+                opacity: 1;
+                transition: 0.5s;
+            }
+
+            #load-shade {
+                display: none;
+            }
+        </style>
+    </noscript>
+
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/assets/images/apple-touch-icon.png"
+    type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/favicon-32x32.png" type="image/png" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+    <!-- viewport start -->
+    <section id="showcase">
+        <div id="shade-global"></div>
+        <div id='load-shade' class="active">
+            <div id='load-content'>
+                <hr>
+                <h2>一只鬆の小站</h2>
+                <h3>LOAD<span id='loading-text'>ing<span class="breath"><span>.</span><span>.</span><span>.</span></span></span></h3>
+                <hr>
+                <br>
+            </div>
+        </div>
+        <header>
+            <div id="logo" class="loading" style="--i: 1">
+                <!-- logo start -->
+                <a href="#userbar">
+                    <img id="avatar" class="no-zoom" src="../../assets/images/avatar.png" alt="avatar">
+                </a>
+                <!-- logo end -->
+            </div>
+            <div id="header-side">
+                <div id="navs">
+                    <!-- nav start -->
+                    <nav>
+                        <a href="/" class="loading" style="--i: 5" id="nav-home">HOME</a>
+                        <a href="/works/" class="loading" style="--i: 4" id="nav-works">WORKS</a>
+                        <a href="/articles/" class="loading" style="--i: 3" id="nav-articles">ARTICLES</a>
+                        <a href="/friends/" class="loading" style="--i: 2" id="nav-friends">FRIENDS</a>
+                        <a href="/about/" class="loading" style="--i: 1" id="nav-about">ABOUT</a>
+                    </nav>
+                    <!-- nav end -->
+                </div>
+                <div id="toggle" class="loading" style="--i: 0"></div>
+            </div>
+        </header>
+        <div id="shade-context"></div>
+        <div id="main" class="loading">
+            <div id='viewmap'>
+                <article>
+                    <div id="articles-header">
+                        <h1><a href="/articles/20230902">HTML语法笔记</a></h1>
+                        <p class="articles-info">
+                            <time>2023-09-02</time> •
+                            <span class="i_small ri:archive-line"></span>
+                            <span class="class">
+                                <a>文档</a>/
+                                <a>笔记</a>
+                            </span> •
+                            <span class="i_small ri:t-box-line"></span> <span id="textLength">----字</span> •
+                            <span class="i_small ri:search-eye-line"></span> <span id="pageVisitors">---</span>
+                        </p>
+                        <p class="articles-tags">
+                            <span class="i_small ri:price-tag-3-line"></span>
+                            <a>HTML</a>
+                            <a>语法笔记</a>
+                        </p>
+                        <hr>
+                    </div>
+
+                    <div id="articles-body">
+                        <h2>标题</h2>
+                        <pre><code class="language-html">
+                        &lt;h1&gt;标题1&lt;/h1&gt;
+                        &lt;h2&gt;标题2&lt;/h2&gt;
+                        &lt;h3&gt;标题3&lt;/h3&gt;
+                        &lt;h4&gt;标题4&lt;/h4&gt;
+                        &lt;h5&gt;标题5&lt;/h5&gt;
+                        &lt;h6&gt;标题6&lt;/h6&gt;
+                        </code></pre>
+                        <h2>字体样式</h2>
+                        <pre><code class="language-html">
+                        &lt;em&gt;强调&lt;/em&gt;
+                        &lt;i&gt;斜体&lt;/i&gt;
+                        &lt;b&gt;粗体&lt;/b&gt;
+                        &lt;strong&gt;加重&lt;/strong&gt;
+                        &lt;small&gt;小号字体&lt;/small&gt;
+                        &lt;strike&gt;删除线&lt;/strike&gt;
+                        </code></pre>
+                        <h2>输入框</h2>
+                        <pre><code class="language-html">&lt;input type=&quot;text&quot; /&gt; 定义单行文本输入框
+                        &lt;input type=&quot;password&quot; /&gt; 定义密码输入框
+                        &lt;input type=&quot;checkbox&quot; /&gt; 定义复选框
+                        &lt;input type=&quot;color&quot; /&gt; 用于包含颜色的输入字段
+                        &lt;input type=&quot;date&quot; /&gt; 输入日期的字段
+                        &lt;input type=&quot;email&quot; /&gt; 邮件地址类型的输入字段
+                        &lt;input type=&quot;file&quot; /&gt; 定义文件选择字段和浏览按钮
+                        &lt;input type=&quot;image&quot; /&gt; 上传图片
+                        &lt;input type=&quot;month&quot; /&gt; 选择月份和年份
+                        &lt;input type=&quot;number&quot; /&gt; 定义数字输入字段
+                        &lt;input type=&quot;radio&quot; /&gt; 定义单选按钮
+                        &lt;input type=&quot;range&quot; /&gt; 滑动条控件
+                        &lt;input type=&quot;reset&quot; /&gt; 定义重置按钮，将所有表单值重置为默认值
+                        &lt;input type=&quot;search&quot; /&gt; 定义搜索字段
+                        &lt;input type=&quot;submit&quot; /&gt; 定义提交表单数据的按钮
+                        &lt;input type=&quot;tel&quot; /&gt; 定义电话号码字段
+                        &lt;input type=&quot;time&quot; /&gt; 选择时间（不包含时区）
+                        &lt;input type=&quot;url&quot; /&gt; URL地址类型的输入字段
+                        &lt;input type=&quot;week&quot; /&gt; 选择周和年份
+                        </code></pre>
+                        <h2>表单</h2>
+                        <pre><code class="language-html">*注意：name 和 id 可以用于这些标签，以便唯一访问它们
+                        &lt;form action=&quot;&quot; method=&quot;&quot; target=&quot;&quot;&gt;&lt;/form&gt; 创建 HTML 表单的容器
+                        &lt;input type=&quot;&quot; /&gt; 定义输入控件，根据 type 属性不同而不同
+                        &lt;label for=&quot;&quot;&gt;&lt;/label&gt; 定义表单元素的标签，与 for 属性相对应
+                        &lt;select&gt;&lt;/select&gt; 定义表单中的下拉列表
+                        &lt;option value=&quot;&quot;&gt;&lt;/option&gt; 定义下拉列表中的选项
+                        &lt;textarea rows=&quot;&quot; cols=&quot;&quot;&gt;&lt;/textarea&gt; 定义多行输入字段
+                        &lt;fieldset&gt;&lt;/fieldset&gt; 在表单中对相关元素进行分组
+                        &lt;legend&gt;&lt;/legend&gt; 为 fieldset 标签定义标题
+                        &lt;datalist&gt;&lt;option value=&quot;&quot;&gt;..&lt;/option&gt;&lt;/datalist&gt; 为输入标签指定预定义选项列表
+                        &lt;output&gt;&lt;/output&gt; 用于表示计算结果（要使用这个标签，需要在 form 标签内使用 oninput 属性）
+                        &lt;optgroup&gt;&lt;/optgroup&gt; 用于分组相关选项
+                        </code></pre>
+                        <h2>换行符</h2>
+                        <pre><code class="language-html">&lt;br /&gt;
+                        </code></pre>
+                        <h2>图片</h2>
+                        <pre><code class="language-html">如果图片存储在您的工作空间中，可以像这样添加图片：
+                        &lt;img src=&quot;img_girl.jpg&quot; width=&quot;400&quot; height=&quot;400&quot; /&gt;
+                        或者您可以直接从浏览器添加图片，像这样：
+                        &lt;img
+                          src=&quot;https://cdn.mos.cms.futurecdn.net/hFm4iWXhbw4c4rdcMH8tUD.jpg&quot;
+                          width=&quot;400&quot;
+                          height=&quot;400&quot;
+                        /&gt;
+                        </code></pre>
+                        <p>第二种方法的输出：</p>
+                         <img src="https://cdn.mos.cms.futurecdn.net/hFm4iWXhbw4c4rdcMH8tUD.jpg"  width="400" height="400">
+                        
+                        <h2>HTML头部</h2>
+                        <pre><code class="language-html">&lt;head&gt;&lt;/head&gt; 元数据的容器
+                        &lt;title&gt;&lt;/title&gt; 项目的标题
+                        &lt;link rel=&quot;stylesheet&quot; href=&quot;&quot; /&gt; 链接到外部样式表
+                        &lt;meta /&gt; 指定字符集、页面描述、关键字、文档作者和视口设置
+                        &lt;style&gt;&lt;/style&gt; 用于为单个文档定义样式信息
+                        &lt;base href=&quot;&quot; /&gt; 指定所有相对 URL 的基本 URL 和/或目标
+                        &lt;script&gt;&lt;/script&gt; 定义客户端 JavaScript
+                        </code></pre>
+                        <h2>水平分隔线</h2>
+                        <pre><code class="language-html">&lt;hr /&gt;
+                        </code></pre>
+                        <h2>锚点</h2>
+                        <pre><code class="language-html">&lt;a href=&quot;url&quot;&gt;链接文本&lt;/a&gt; 链接到 url
+                        &lt;a href=&quot;#yourSection&quot;&gt;链接文本&lt;/a&gt; 链接到页面中的某一部分
+                        &lt;a href=&quot;url&quot; target=&quot;_blank&quot;&gt;链接文本&lt;/a&gt; 在新标签页中打开链接
+                        </code></pre>
+                        <h2>表格</h2>
+                        <pre><code class="language-html">&lt;table&gt;&lt;/table&gt; 定义表格
+                        &lt;tr&gt;&lt;/tr&gt; 定义表格行
+                        &lt;th&gt;&lt;/th&gt; 定义表格标题
+                        &lt;td&gt;&lt;/td&gt; 定义表格数据
+                        </code></pre>
+                        <h2>列表</h2>
+                        <pre><code class="language-html">&lt;ul&gt;&lt;/ul&gt; 定义无序列表
+                        &lt;ol&gt;&lt;/ol&gt; 定义有序列表
+                        &lt;li&gt;&lt;/li&gt; 定义列表项
+                        &lt;dl&gt;&lt;/dl&gt; 定义描述列表
+                        &lt;dt&gt;&lt;/dt&gt; 定义描述列表中的术语
+                        &lt;dd&gt;&lt;/dd&gt; 描述描述列表中的术语
+                        </code></pre>
+                        <h2>按钮</h2>
+                        <pre><code class="language-html">&lt;button&gt;&lt;/button&gt; 定义可点击的按钮
+                        </code></pre>
+                        <h2>SVG</h2>
+                        <pre><code class="language-html">&lt;svg&gt;&lt;/svg&gt; SVG 图形的容器
+                        </code></pre>
+                        <h3>视频标签</h3>
+                        <pre><code class="language-html">&lt;video controls src=&quot;movie.mp4&quot; type=&quot;video/mp4&quot;&gt;
+                          该浏览器不支持该视频格式！
+                        &lt;/video&gt;
+                        </code></pre>
+                        <h2>无序列表</h2>
+                        <pre><code class="language-html">&lt;ul&gt;
+                          &lt;li&gt;项目1&lt;/li&gt;
+                          &lt;li&gt;项目2&lt;/li&gt;
+                          &lt;li&gt;项目3&lt;/li&gt;
+                        &lt;/ul&gt;
+                        </code></pre>
+                        <h2>有序列表</h2>
+                        <pre><code class="language-html">&lt;ol&gt;
+                          &lt;li&gt;项目1&lt;/li&gt;
+                          &lt;li&gt;项目2&lt;/li&gt;
+                          &lt;li&gt;项目3&lt;/li&gt;
+                        &lt;/ol&gt;
+                        </code></pre>
+                        <h2>HTML语义化</h2>
+                        <pre><code class="language-html">&lt;header&gt;&lt;/header&gt; 指定文档或部分的标题
+                        &lt;main&gt;&lt;/main&gt; 指定文档的主要内容
+                        &lt;footer&gt;&lt;/footer&gt; 定义文档或部分的页脚
+                        &lt;article&gt;&lt;/article&gt; 定义独立、自包含的内容
+                        &lt;aside&gt;&lt;/aside&gt; 定义与页面内容无关的内容
+                        &lt;figure&gt;&lt;/figure&gt; 指定独立的内容
+                        &lt;nav&gt;&lt;/nav&gt; 定义导航链接
+                        &lt;section&gt;&lt;/section&gt; 定义文档中的一个部分
+                        </code></pre>
+                        <h2>语义化媒体标签</h2>
+                        <pre><code class="language-html">&lt;figure&gt;&lt;/figure&gt; 嵌入带注释的图片、插图、照片、代码等。
+                        &lt;figcaption&gt;&lt;/figcaption&gt; 为 &lt;figure&gt; 添加标题/注释。
+                        &lt;picture&gt;&lt;/picture&gt; 响应式图像插入，允许开发人员为不同的上下文提供不同的图像。
+                        
+                        &lt;video poster=&quot; &quot; autoplay loop controls &gt;&lt;/video&gt;嵌入视频到网页中。
+                           poster 是视频播放前显示的图像路径。
+                           autoplay 自动播放视频。
+                           loop 触发视频是否重复播放。
+                           controls 显示或隐藏浏览器的播放器按钮。
+                        
+                        &lt;audio&gt;&lt;/audio&gt; 将音频嵌入到网页中。
+                        &lt;source&gt;&lt;/source&gt; 必须在 &lt;picture&gt;、&lt;video&gt; 或 &lt;audio&gt; 内部定义不同版本的内容。
+                        </code></pre>
+                        <h2>音频</h2>
+                        <pre><code class="language-html">&lt;audio&gt;&lt;/audio&gt; HTML &lt;audio&gt; 元素用于嵌入声音内容。
+                        </code></pre>
+                        <h2>脚本</h2>
+                        <pre><code class="language-html">&lt;canvas&gt;&lt;/canvas&gt; 与 canvas 脚本 API 或 WebGL API 结合使用，用于绘制图形和动画。
+                        &lt;noscript&gt;&lt;/noscript&gt; 定义一个 HTML 部分，如果页面上某个脚本类型不受支持或脚本当前处于关闭状态，则插入该部分。
+                        </code></pre>
+                        <h3>表情符号</h3>
+                        <pre><code class="language-html">&lt;p style=&quot;font-size:48px&quot;&gt;&amp;#128512; &amp;#128516; &amp;#128525; &amp;#128151;&lt;/p&gt;
+                        </code></pre>
+                        <p>输出结果：</p>
+                        <p style="font-size:48px">&#128512; &#128516; &#128525; &#128151;</p>
+                        
+                        
+                        <blockquote>
+                        <p>表情符号的 Unicode 编码请参考 <em><a href="https://www.w3schools.com/charsets/ref_emoji.asp">此处</a></em>。</p>
+                        </blockquote>
+                        
+                    <div id="articles-footer">
+                        <hr>
+                        <div class="articles-footer-cc">
+                            <span class="i_small ri:information-line"></span> 原创内容使用 <a href="/help#分享协议">
+                                <span class="i_small ri:creative-commons-line"></span><span class="i_small ri:creative-commons-nc-line"></span><span class="i_small ri:creative-commons-nd-line"></span>知识共享 署名-非商业性使用-相同方式共享 4.0 (CC BY-NC-ND 4.0)
+                            </a>
+                            协议授权。转载请注明出处。
+                        </div>
+                        <div id="blockchain-data"></div>
+                        <div id="more-articles">
+                            <div id="previous" onclick="pjaxLoad('${previousArticlesUrl}')">
+                                <b><span class="i_small ri:arrow-left-s-line"></span> 上一篇</b><br>
+                                <span class="one-line">正在加载中...</span>
+                            </div>
+                            <div id="next" onclick="pjaxLoad('${nextArticlesUrl}')">
+                                <b>下一篇 <span class="i_small ri:arrow-right-s-line"></span></b><br>
+                                <span class="one-line">正在加载中...</span>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div id="tcomment">
+                            <div class="info center">
+                                <span class="i_small ri:download-cloud-line"></span> 正在加载评论...
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <footer>
+            <div id="icons-left">
+                <nav>
+                    <a class="loading" style="--i: 1" id="icon-about" href="#about" onclick="openInfoBar('info');return false;" aria-label="about this page"><span class="i ri:file-info-line"></span></a>
+                    <a class="loading" style="--i: 2" id="icon-github" href="http://github.com/yzsong06" target="_blank" rel="noreferrer" aria-label="my github"><span class="i ri:github-fill"></span></a>
+                    <a class="loading" style="--i: 4" id="icon-rss" onclick="openInfoBar('feed')" aria-label="rss"><span class="i ri:rss-fill"></span></a>
+                </nav>
+            </div>
+            <div id="icons-right" class="loading" style="--i: 1">
+                <div id="message-bar">
+                    <noscript>
+                        <a class="red" href="/about/help#javascript"><strong>错误:无法使用JAVASCRIPT</strong>&nbsp;<span class="i ri:alert-line"></span></a>
+                    </noscript>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <section id="sidebar">
+        <div id="sidebar-top">
+            <div id="sideinfo">
+                <h3>一只鬆の</h3>
+                <h2>小站</h2>
+                <a class="icons" href="mailto:yzsong06@outlook.com" id="email"><span class="i ri:mail-add-fill"></span>&nbsp;<span> yzsong06@outlook.com</span></a>
+                <hr>
+            </div>
+        </div>
+        <div id="sidebar-mid">
+            <menu id="sidebar-menu">
+                <ul>
+                    <!-- menu start -->
+                    <li style="--i: 1"><a href='/'><span class='i_small ri:home-3-fill'></span> HOME</a></li>
+                    <li style="--i: 2"><a href='/works/'><span class='i_small ri:dashboard-fill'></span> WORKS</a></li>
+                    <li style="--i: 3"><a href='/articles/'><span class='i_small ri:article-fill'></span> ARTICLES</a></li>
+                    <li style="--i: 4"><a href='/images/'><span class='i_small ri:image-fill'></span> IMAGES</a></li>
+                    <li style="--i: 5"><a href='/games/'><span class='i_small ri:gamepad-fill'></span> GAMES</a></li>
+                    <li style="--i: 6"><a href='/${nav3}/'><span class='i_small ${navIcon3}'></span> ${navName3}</a></li>
+                    <li style="--i: 7"><a href='/friends/'><span class='i_small ri:team-fill'></span> FRIENDS</a></li>
+                    <li style="--i: 8"><a href='/about/'><span class='i_small ri:information-fill'></span> ABOUT</a></li>
+                    <li>&nbsp;</li>
+                    <li><a href="/admin/"><span class="i_small ri:login-box-fill"></span> LOG IN</a></li>
+                    <li><a href="/about/help/"><span class="i_small ri:questionnaire-fill"></span> HELP</a></li>
+                    <!-- menu end -->
+                </ul>
+            </menu>
+        </div>
+        <div id="sidebar-bottom">
+            <hr>
+            <div id="side-info">
+                <!-- side-info start -->
+                <b>
+                    Theme : <a href='https://github.com/ravelloh/RTheme'>RTheme </a>.<br>
+                    Copyright © 2022 - <b id='year'></b> 一只鬆.<br>
+                    All rights reserved.
+                </b>
+                <!-- side-info end -->
+            </div>
+            <div class="flex-iconset">
+                <ul>
+                    <li><a href="#swap" id="icon-swap" onclick="openInfoBar('swap');return false;" aria-label="swap"><span class="i ri:swap-box-line"></span></a></li>
+                    <li><a href="#" id="icon-color" onclick="toggleThemeMode();return false;" aria-label="color"><span class="i ri:sun-line"></span></a></li>
+                    <li><a href="#music" id="icon-music" onclick="openInfoBar('music');return false;" aria-label="music"><span class="i ri:file-music-line"></span></a></li>
+                    <li><a href="#" id="icon-fullscreen" onclick="toggleFullScreen();return false;" aria-label="fullscreen"><span class="i ri:aspect-ratio-line"></span></a></li>
+                    <li><a href="#share" id="icon-share" onclick="openInfoBar('share');return false;" aria-label="share"><span class="i ri:share-box-line"></span></a></li>
+                    <li><a href="#setting" id="icon-setting" onclick="openInfoBar('setting');return false;" aria-label="setting"><span class="i ri:settings-4-line"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="infobar">
+        <div id="infobar-header">
+            <div id="infobar-title">
+                INFO
+            </div>
+            <div id="infobar-toggle">
+                <span class="i ri:arrow-down-s-line"></span>
+            </div>
+        </div>
+        <div id="infobar-context">
+            <div id="infobar-left">
+            </div>
+            <div id="infobar-right">
+                <h2 id="time">00:00</h2>
+                <hr />
+                <div id="music-player">
+                    <div id='music-top'>
+                        <div id="music-name">
+                            无正在播放的音乐
+                        </div>
+                        <div id='music-time'>
+                            00:00/00:00
+                        </div>
+                    </div>
+                    <audio id="music" src="/" ontimeupdate="musicUpdata()" loop="loop" preload="none"></audio>
+                    <div id="music-bar">
+                        <div id="music-progress-container">
+                            <div id="music-progress">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="music-operation">
+                        <span onclick="musicSetting()"><span class="i ri:play-list-line"></span></span>
+                        <span class="i ri:skip-back-line" onclick="musicGo(-10)"></span>
+                        <span id='music-button' onclick="musicPlay()"><span class="i ri:play-line"></span></span>
+                        <span class="i ri:skip-forward-line" onclick="musicGo(10)"></span>
+                        <span class="i ri:repeat-one-line"></span>
+                    </div>
+                </div>
+                <div id="state-bar">
+                </div>
+                <div id="uid" class="barcode center">
+                    <br>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section id="userbar"></section>
+    <!-- viewport end -->
+
+    <!-- JavaScript -->
+    <script defer type="text/javascript" src="../../assets/js/i18n.js" onload="loadComplete('i18n.js')"></script>
+    <script defer type="text/javascript" src="../../assets/js/moudle.js" onload="loadComplete('moudle.js')"></script>
+    <script defer type="text/javascript" src="../../assets/js/script.js" onload="loadComplete('script.js')"></script>
+    <script defer type="text/javascript" src="../../assets/js/display.js" onload="loadComplete('display.js')"></script>
+    <script defer type="text/javascript" src="../../assets/js/pjax.js" onload="enablePjax();loadComplete('pjax.js')"></script>
+    <script defer type="text/javascript" src="../../assets/js/analysis.js"
+        onload="initAnalytics()"></script>
+    <div id="page-js">
+        <script>
+            function main() {}
+        </script>
+    </div>
+
+    <!-- Prefetch -->
+    <div id="page-prefetch">
+    </div>
+</body>
+
+</html>
+<!-- EOF -->
