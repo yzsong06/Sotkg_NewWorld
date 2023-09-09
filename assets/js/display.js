@@ -312,7 +312,7 @@ function initComment() {
         })
         .then(() => {
             addMessageBarQueue(
-                '<a>已与评论服务器建立通讯&nbsp;<span class="i ri:message-line"></span></a>',
+                '<a>已与评论服务建立通讯&nbsp;<span class="i ri:message-line"></span></a>',
                 2000,
             );
         })

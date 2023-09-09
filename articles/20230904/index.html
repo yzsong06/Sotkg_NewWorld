@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>RThemeV3 边缘服务配置 | 一只鬆の小站</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="RThemeV3 边缘服务配置 | 一只鬆の小站" />
+    <meta name="author" content="一只鬆" />
+    <meta name="pagetype" content="articles-context" />
+    <meta name="theme-color" content="#111111" />
+    <meta property="og:title" content="一只鬆の小站">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sotkg.cn/">
+    <meta property="og:image" content="https://sotkg.cn/assets/images/android-chrome-512x512.png">
+
+    <!-- Preload -->
+    <link rel="preload" href="../../assets/fonts/ri.woff2" as="font" crossorigin>
+    <link rel="preload" href="../../assets/fonts/Furore.ttf" as="font" crossorigin>
+    <link rel="preload" href="../../assets/js/script.js" as="script">
+    <link rel="preload" href="../../assets/js/i18n.js" as="script">
+    <link rel="preload" href="../../assets/js/moudle.js" as="script">
+    <link rel="preload" href="../../assets/js/display.js" as="script">
+    <link rel="preload" href="../../assets/css/style.css" as="style" />
+    <link rel="preload" href="../../assets/css/iconfont.css" as="style" />
+    <link rel="preload" href="../../assets/images/avatar.png" as="image" />
+    <script defer type="text/javascript" src="../../assets/js/loading.js"></script>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../../assets/css/iconfont.css" type="text/css" />
+    <noscript>
+        <style type="text/css" media="all">
+            .loading {
+                opacity: 1;
+                transition: 0.5s;
+            }
+
+            #load-shade {
+                display: none;
+            }
+        </style>
+    </noscript>
+
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/assets/images/apple-touch-icon.png"
+    type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/favicon-32x32.png" type="image/png" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+    <!-- viewport start -->
+    <section id="showcase">
+        <div id="shade-global"></div>
+        <div id='load-shade' class="active">
+            <div id='load-content'>
+                <hr>
+                <h2>一只鬆の小站</h2>
+                <h3>LOAD<span id='loading-text'>ing<span class="breath"><span>.</span><span>.</span><span>.</span></span></span></h3>
+                <hr>
+                <br>
+            </div>
+        </div>
+        <header>
+            <div id="logo" class="loading" style="--i: 1">
+                <!-- logo start -->
+                <a href="#userbar">
+                    <img id="avatar" class="no-zoom" src="../../assets/images/avatar.png" alt="avatar">
+                </a>
+                <!-- logo end -->
+            </div>
+            <div id="header-side">
+                <div id="navs">
+                    <!-- nav start -->
+                    <nav>
+                        <a href="/" class="loading" style="--i: 5" id="nav-home">HOME</a>
+                        <a href="/works/" class="loading" style="--i: 4" id="nav-works">WORKS</a>
+                        <a href="/articles/" class="loading" style="--i: 3" id="nav-articles">ARTICLES</a>
+                        <a href="/friends/" class="loading" style="--i: 2" id="nav-friends">FRIENDS</a>
+                        <a href="/about/" class="loading" style="--i: 1" id="nav-about">ABOUT</a>
+                    </nav>
+                    <!-- nav end -->
+                </div>
+                <div id="toggle" class="loading" style="--i: 0"></div>
+            </div>
+        </header>
+        <div id="shade-context"></div>
+        <div id="main" class="loading">
+            <div id='viewmap'>
+                <article>
+                    <div id="articles-header">
+                        <h1><a href="/articles/20230904/">RThemeV3 边缘服务配置</a></h1>
+                        <p class="articles-info">
+                            <time>2023-09-04</time> •
+                            <span class="i_small ri:archive-line"></span>
+                            <span class="class">
+                                <a>教程</a>/
+                                <a>主题</a>
+                            </span> •
+                            <span class="i_small ri:t-box-line"></span> <span id="textLength">----字</span> •
+                            <span class="i_small ri:search-eye-line"></span> <span id="pageVisitors">---</span>
+                        </p>
+                        <p class="articles-tags">
+                            <span class="i_small ri:price-tag-3-line"></span>
+                            <a>RThemeV3</a>
+                            <a>主题配置</a>
+                        </p>
+                        <hr>
+                    </div>
+
+                    <div id="articles-body">
+                        <div class="info">
+                            本文中提到的主题配置服务适用于RThemeV3.0.0版本，请时刻跟进作者最新教程以保证您的主题可以顺利配置！
+                        </div>
+                        <p>
+                            RTheme是我最近给我个人站点换的一个很不错的站点主题，他的启动难度并不算很高。<br>
+                            但我再给站点配置一些边缘服务时（详见<a href="https://ravelloh.top/articles/20230815/#配置边缘服务"></a>）<br>
+                            因为我个人技术也不算很高，所以遇到了一些问题，虽然后面得以顺利解决，但我决定写下了这篇文章。<br>
+                            希望那些想用本主题建站的像我这样的半小白们能够更快的上手这方面的配置，本文也是用一些小白式方案来解决配置服务时的问题<br>
+                        </p>
+                        <h3>配置Twikoo评论服务</h3>
+<p>这里其实作者文档写的并不算很难，只要你有一个Twikoo都能很快理解他写的意思。</p>
+<p>没有Twikoo的请参考官方文档：<a href="https://twikoo.js.org%EF%BC%8C%E6%9D%A5%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E3%80%82">https://twikoo.js.org，来搭建一个。</a></p>
+<p>那么我们再来看一下主题作者的原话：</p>
+<p>默认情况下，Twikoo处于开启状态。</p>
+<p>要使用Twikoo，只需要在<code>/asstes/js/display.js</code>（作者这里打错了，应该是assets）中，修改函数<code>loadComment()</code>的定义，将其中包含的<code>envId: &#39;&#39;</code>(大概在第304行左右)修改为<code>envId: &#39;这里填写你的envId&#39;</code></p>
+<p>上面函数的定义还是比较好找的，在主题文件目录下/assets/js/display.js，找到大概在下面这片区域（大约在304行左右）的代码，在这个<code>envId: &#39;&#39;</code>的单引号里面填写你的Twikoo后端服务的网址就可以了。</p>
+<pre><code class="language-javascript">
+// 评论初始化
+function initComment() {
+    twikoo
+        .init({
+            // 这里填写你的envId
+            envId: &#39;&#39;,
+            el: &#39;#tcomment&#39;,
+            onCommentLoaded: function () {
+                addMessageBarQueue(
+                    &#39;&lt;a&gt;评论已加载 &lt;span class=&quot;i ri:chat-check-line&quot;&gt;&lt;/span&gt;&lt;/a&gt;&#39;,
+                    1000,
+                );
+            },
+        })
+    }
+</code></pre>
+<h3>Umami统计配置</h3>
+<p>这里发Post请求（Umami官方文档获取token）难了我一下，不过其实还算能办。</p>
+<p>我们来看一下主题作者的原话：</p>
+<blockquote>
+<p>获取你的token(详见<a href="https://umami.is/docs/authentication">Umami的官方文档</a>)。</p>
+</blockquote>
+<p>这两个都不算很简单。</p>
+<p>关于发请求获取“你的token”，这里我个人的建议方案是找一个网页模拟请求服务（我用的是<a href="http://coolaf.com/tool/post%EF%BC%89%EF%BC%8C%E7%84%B6%E5%90%8EUmami%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%E4%B8%AD%E7%94%A8%E7%9A%84%E6%98%AFJson%E6%9D%A5%E5%8F%91%E9%80%81%E7%9A%84%E8%AF%B7%E6%B1%82%EF%BC%8C%E6%89%80%E4%BB%A5%E6%88%91%E4%BB%AC%E5%9C%A8%E8%BF%99%E4%B8%AA%E7%BD%91%E7%AB%99%E8%A6%81%E6%8A%8A%E6%A8%A1%E5%BC%8F%E5%88%87%E6%88%90%60Raw%60%EF%BC%8C%E6%A0%BC%E5%BC%8F%E6%98%AF%60json(application/json)%60%EF%BC%8C%E7%84%B6%E5%90%8E%E6%88%91%E4%BB%AC%E7%9C%8B%E4%B8%80%E4%B8%8BUmami%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%E5%86%99%E7%9A%84%EF%BC%9A">http://coolaf.com/tool/post），然后Umami官方文档中用的是Json来发送的请求，所以我们在这个网站要把模式切成`Raw`，格式是`json(application/json)`，然后我们看一下Umami官方文档写的：</a></p>
+<blockquote>
+<p>First you need to get a <em>token</em> in order to make API requests. You need to make a <code>POST</code> request to the <code>/api/auth/login</code> endpoint with the following data</p>
+</blockquote>
+<p>翻译过来是：</p>
+<blockquote>
+<p>首先，您需要获取令牌才能发出 API 请求。您需要使用以下数据向 <code>/api/auth/login</code> 终端节点发出 <code>POST</code> 请求</p>
+</blockquote>
+<p>这里首先先解释一下：你要发送到的节点地址其实就是<code>https://（Umami后端地址）/api/auth/login</code>，我们把这个链接填到网页工具上面的URL填写框里面。</p>
+<p>下面Json填写</p>
+<pre><code class="language-json">
+    {
+  &quot;username&quot;: &quot;你的登录用户名&quot;,
+  &quot;password&quot;: &quot;你的登录密码&quot;
+}
+</code></pre>
+<p>填完以后点下“提交”，耐心等待一下，下面应该就BalaBala的出了数据，差不多应该是下面这个样子：</p>
+<pre><code class="language-json">
+    {
+    &quot;token&quot;: &quot;asA5dIfE...Pm5y7YXeT53rKnWZZEPoKbQ5N8Sx2a99NuR7s/BWiqLOVA==（类似这样的token）&quot;,
+    &quot;user&quot;: {
+        &quot;id&quot;: &quot;41680....e2b10c264（用户ID）&quot;,
+        &quot;username&quot;: &quot;你的登录用户名&quot;,
+        &quot;role&quot;: &quot;admin&quot;,
+        &quot;createdAt&quot;: &quot;一串时间&quot;
+    }
+}
+</code></pre>
+<p>这个<code>&quot;token&quot;:</code>右边括号里的内容就是你的token，是不是学废了？</p>
+<p>先别废，如果你这里就废了，那接下来更完蛋。</p>
+<p>接下来要获取你的“共享token”，你需要一个能打开F12控制台的浏览器，我使用的是Chrome。</p>
+<p>这里作者原话是：</p>
+<blockquote>
+<p>获取你的共享token(创建你的站点的贡献链接（共享链接），访问并用开发者工具查看网络信息，复制任意一个含有<code>x-umami-share-token</code>的请求头的网络请求的<code>x-umami-share-token</code>值)。</p>
+</blockquote>
+<p>首先我们得打开你的Umami，然后找到站点设置里的“共享链接”，打开这个功能后，你会在下面得到一个链接，把这个链接复制到浏览器地址栏里然后打开它（建议用无痕式标签页模式），按下你键盘上的<code>F12</code>打开你的浏览器控制台，找到<code>网络</code>选项，这里应该会有一个文件列表（没有的话按一下<code>Ctrl+R</code>刷新页面），然后会有一个令人头疼的问题是：你去哪里找这个Token？</p>
+<p>我之前曾尝试过直接搜索<code>x-umami-share-token</code>，然后搜不到，最后我个人给的办法是：</p>
+<ol>
+<li>切换筛选类型为<code>Fetch/XHR</code>，</li>
+<li>然后随便点开里面一个文件，找到<code>标头</code>信息</li>
+<li>翻到最下面，然后你就应该可以看到这个<code>x-umami-share-token</code>了，复制它的值（没有换一个文件看看）</li>
+</ol>
+<p>这样，你就得到了这个“共享Token”</p>
+<p>如果你照着上面的教程都得到了，恭喜你！（鼓掌👏）你完成了关键的一步操作。</p>
+<p>接下来主题作者说：</p>
+<blockquote>
+<p>之后，你需要部署你的路由转发服务来隐藏你的Token。</p>
+</blockquote>
+<p>你需要一个Vercel账号，还有一个域名（Vercel默认二级域名在中国大陆已被墙）</p>
+<p>作者给的仓库是：<a href="https://github.com/RavelloH/umami-api-route">https://github.com/RavelloH/umami-api-route</a></p>
+<p>部署并且把你之前得到的个人Token填进环境变量里，然后给它绑一个域名（如果你的域名是顶级域名，建议你给它绑到三级减少被搜索引擎拉取的情况，安全性也更高）</p>
+<p>然后，你就完成了这些准备工作，恭喜！</p>
+<p>接下来作者说：</p>
+<blockquote>
+<p>然后，在<code>/assets/js/analysis.js</code>中，取消注释函数<code>initAnalytics()</code>中的<code>// umamiAnalytics();</code>，然后修改<code>getRealTimeVisitors()</code>中的token值为你的共享token，并取消位于定义最上方的<code>return false</code>，之后修改函数<code>getPageVisitors()</code>的定义，删除其最上方的内容，并将下方的<code>apiURL</code>中的<code>https://analytics.api.ravelloh.top</code>修改为你自己的路由转发API地址。
+最后，转到<code>/assets/js/script.js</code>，修改<code>refreshInfo()</code>的定义(大概在790行)，将定义最下方的包含<code>接入Umami</code>字样的注释取消即可。
+都修改完成后，所有功能应该正常工作。</p>
+</blockquote>
+<p>好，这些应该都不难办，注释取消就是把类似<code>//接入Umami</code>删掉，我相信你能够理解的。</p>
+<h3>BetterStack的Uptime服务</h3>
+<p>这个还算简单，先去BetterStack那里注册一个账号，登录以后加上你的站点，获取API地址，关于获取这些作者API转发项目GitHub仓库的文档写的很全，我这里不做详述。</p>
+<p>API转发项目GitHub仓库地址：<a href="https://github.com/RavelloH/uptime-api-route">https://github.com/RavelloH/uptime-api-route</a></p>
+<p>然后作者说：</p>
+<blockquote>
+<p>之后，转到<code>/assets/js/analysis.js</code>，修改<code>loadUptime</code>的定义，将<code>site</code>的值修改为你的路由转发API地址。
+接着，转到<code>/assets/js/i18n.js</code>，将其中<code>structureInfobarInfo()</code>的定义的返回值中最后几行的包含<code>需要先配置Uptime</code>字样的注释取消，
+最后，转到<code>/assets/js/script.js</code>，修改<code>refreshInfo()</code>的定义(大概在790行)，将定义最下方的包含<code>接入Uptime模块</code>字样的注释取消即可。
+都修改完成后，所有功能应该正常工作。</p>
+</blockquote>
+<p>按照他说的修改即可，都做完了之后。</p>
+<p>我是真的要恭喜你，你已经完成了基本的边缘配置</p>
+
+                    </div>
+                    <div id="articles-footer">
+                        <hr>
+                        <div class="articles-footer-cc">
+                            <span class="i_small ri:information-line"></span> 原创内容使用 <a href="/help#分享协议">
+                                <span class="i_small ri:creative-commons-line"></span><span class="i_small ri:creative-commons-nc-line"></span><span class="i_small ri:creative-commons-nd-line"></span>知识共享 署名-非商业性使用-相同方式共享 4.0 (CC BY-NC-ND 4.0)
+                            </a>
+                            协议授权。转载请注明出处。
+                        </div>
+                        <div id="blockchain-data"></div>
+                        <div id="more-articles">
+                            <div id="previous" onclick="pjaxLoad('${previousArticlesUrl}')">
+                                <b><span class="i_small ri:arrow-left-s-line"></span> 上一篇</b><br>
+                                <span class="one-line">正在加载中...</span>
+                            </div>
+                            <div id="next" onclick="pjaxLoad('${nextArticlesUrl}')">
+                                <b>下一篇 <span class="i_small ri:arrow-right-s-line"></span></b><br>
+                                <span class="one-line">正在加载中...</span>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div id="tcomment">
+                            <div class="info center">
+                                <span class="i_small ri:download-cloud-line"></span> 正在加载评论...
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <footer>
+            <div id="icons-left">
+                <nav>
+                    <a class="loading" style="--i: 1" id="icon-about" href="#about" onclick="openInfoBar('info');return false;" aria-label="about this page"><span class="i ri:file-info-line"></span></a>
+                    <a class="loading" style="--i: 2" id="icon-github" href="http://github.com/yzsong06" target="_blank" rel="noreferrer" aria-label="my github"><span class="i ri:github-fill"></span></a>
+                    <a class="loading" style="--i: 4" id="icon-rss" onclick="openInfoBar('feed')" aria-label="rss"><span class="i ri:rss-fill"></span></a>
+                </nav>
+            </div>
+            <div id="icons-right" class="loading" style="--i: 1">
+                <div id="message-bar">
+                    <noscript>
+                        <a class="red" href="/about/help#javascript"><strong>错误:无法使用JAVASCRIPT</strong>&nbsp;<span class="i ri:alert-line"></span></a>
+                    </noscript>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <section id="sidebar">
+        <div id="sidebar-top">
+            <div id="sideinfo">
+                <h3>一只鬆の</h3>
+                <h2>小站</h2>
+                <a class="icons" href="mailto:yzsong06@outlook.com" id="email"><span class="i ri:mail-add-fill"></span>&nbsp;<span> yzsong06@outlook.com</span></a>
+                <hr>
+            </div>
+        </div>
+        <div id="sidebar-mid">
+            <menu id="sidebar-menu">
+                <ul>
+                    <!-- menu start -->
+                    <li style="--i: 1"><a href='/'><span class='i_small ri:home-3-fill'></span> HOME</a></li>
+                    <li style="--i: 2"><a href='/works/'><span class='i_small ri:dashboard-fill'></span> WORKS</a></li>
+                    <li style="--i: 3"><a href='/articles/'><span class='i_small ri:article-fill'></span> ARTICLES</a></li>
+                    <li style="--i: 4"><a href='/images/'><span class='i_small ri:image-fill'></span> IMAGES</a></li>
+                    <li style="--i: 5"><a href='/games/'><span class='i_small ri:gamepad-fill'></span> GAMES</a></li>
+                    <li style="--i: 6"><a href='/${nav3}/'><span class='i_small ${navIcon3}'></span> ${navName3}</a></li>
+                    <li style="--i: 7"><a href='/friends/'><span class='i_small ri:team-fill'></span> FRIENDS</a></li>
+                    <li style="--i: 8"><a href='/about/'><span class='i_small ri:information-fill'></span> ABOUT</a></li>
+                    <li>&nbsp;</li>
+                    <li><a href="/admin/"><span class="i_small ri:login-box-fill"></span> LOG IN</a></li>
+                    <li><a href="/about/help/"><span class="i_small ri:questionnaire-fill"></span> HELP</a></li>
+                    <!-- menu end -->
+                </ul>
+            </menu>
+        </div>
+        <div id="sidebar-bottom">
+            <hr>
+            <div id="side-info">
+                <!-- side-info start -->
+                <b>
+                    Theme : <a href='https://github.com/ravelloh/RTheme'>RTheme </a>.<br>
+                    Copyright © 2022 - <b id='year'></b> 一只鬆.<br>
+                    All rights reserved.
+                </b>
+                <!-- side-info end -->
+            </div>
+            <div class="flex-iconset">
+                <ul>
+                    <li><a href="#swap" id="icon-swap" onclick="openInfoBar('swap');return false;" aria-label="swap"><span class="i ri:swap-box-line"></span></a></li>
+                    <li><a href="#" id="icon-color" onclick="toggleThemeMode();return false;" aria-label="color"><span class="i ri:sun-line"></span></a></li>
+                    <li><a href="#music" id="icon-music" onclick="openInfoBar('music');return false;" aria-label="music"><span class="i ri:file-music-line"></span></a></li>
+                    <li><a href="#" id="icon-fullscreen" onclick="toggleFullScreen();return false;" aria-label="fullscreen"><span class="i ri:aspect-ratio-line"></span></a></li>
+                    <li><a href="#share" id="icon-share" onclick="openInfoBar('share');return false;" aria-label="share"><span class="i ri:share-box-line"></span></a></li>
+                    <li><a href="#setting" id="icon-setting" onclick="openInfoBar('setting');return false;" aria-label="setting"><span class="i ri:settings-4-line"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="infobar">
+        <div id="infobar-header">
+            <div id="infobar-title">
+                INFO
+            </div>
+            <div id="infobar-toggle">
+                <span class="i ri:arrow-down-s-line"></span>
+            </div>
+        </div>
+        <div id="infobar-context">
+            <div id="infobar-left">
+            </div>
+            <div id="infobar-right">
+                <h2 id="time">00:00</h2>
+                <hr />
+                <div id="music-player">
+                    <div id='music-top'>
+                        <div id="music-name">
+                            无正在播放的音乐
+                        </div>
+                        <div id='music-time'>
+                            00:00/00:00
+                        </div>
+                    </div>
+                    <audio id="music" src="/" ontimeupdate="musicUpdata()" loop="loop" preload="none"></audio>
+                    <div id="music-bar">
+                        <div id="music-progress-container">
+                            <div id="music-progress">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="music-operation">
+                        <span onclick="musicSetting()"><span class="i ri:play-list-line"></span></span>
+                        <span class="i ri:skip-back-line" onclick="musicGo(-10)"></span>
+                        <span id='music-button' onclick="musicPlay()"><span class="i ri:play-line"></span></span>
+                        <span class="i ri:skip-forward-line" onclick="musicGo(10)"></span>
+                        <span class="i ri:repeat-one-line"></span>
+                    </div>
+                </div>
+                <div id="state-bar">
+                </div>
+                <div id="uid" class="barcode center">
+                    <br>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section id="userbar"></section>
+    <!-- viewport end -->
+
+    <!-- JavaScript -->
+    <script defer type="text/javascript" src="../../assets/js/i18n.js" onload="loadComplete('i18n.js')"></script>
+    <script defer type="text/javascript" src="../../assets/js/moudle.js" onload="loadComplete('moudle.js')"></script>
+    <script defer type="text/javascript" src="../../assets/js/script.js" onload="loadComplete('script.js')"></script>
+    <script defer type="text/javascript" src="../../assets/js/display.js" onload="loadComplete('display.js')"></script>
+    <script defer type="text/javascript" src="../../assets/js/pjax.js" onload="enablePjax();loadComplete('pjax.js')"></script>
+    <script defer type="text/javascript" src="../../assets/js/analysis.js"
+        onload="initAnalytics()"></script>
+    <div id="page-js">
+        <script>
+            function main() {}
+        </script>
+    </div>
+
+    <!-- Prefetch -->
+    <div id="page-prefetch">
+    </div>
+</body>
+
+</html>
+<!-- EOF -->
