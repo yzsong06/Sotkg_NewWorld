@@ -112,6 +112,9 @@
                     </div>
 
                     <div id="articles-body">
+                        <div class="info-warning">
+                            以下语法不完全适用于本博客使用的RTheme主题，部分语法作者有额外修改！
+                        </div>
                         <h2>标题</h2>
                         <pre><code class="language-html">
                         &lt;h1&gt;标题1&lt;/h1&gt;
@@ -131,7 +134,8 @@
                         &lt;strike&gt;删除线&lt;/strike&gt;
                         </code></pre>
                         <h2>输入框</h2>
-                        <pre><code class="language-html">&lt;input type=&quot;text&quot; /&gt; 定义单行文本输入框
+                        <pre><code class="language-html">
+                        &lt;input type=&quot;text&quot; /&gt; 定义单行文本输入框
                         &lt;input type=&quot;password&quot; /&gt; 定义密码输入框
                         &lt;input type=&quot;checkbox&quot; /&gt; 定义复选框
                         &lt;input type=&quot;color&quot; /&gt; 用于包含颜色的输入字段
@@ -152,7 +156,8 @@
                         &lt;input type=&quot;week&quot; /&gt; 选择周和年份
                         </code></pre>
                         <h2>表单</h2>
-                        <pre><code class="language-html">*注意：name 和 id 可以用于这些标签，以便唯一访问它们
+                        <pre><code class="language-html">
+                        *注意：name 和 id 可以用于这些标签，以便唯一访问它们
                         &lt;form action=&quot;&quot; method=&quot;&quot; target=&quot;&quot;&gt;&lt;/form&gt; 创建 HTML 表单的容器
                         &lt;input type=&quot;&quot; /&gt; 定义输入控件，根据 type 属性不同而不同
                         &lt;label for=&quot;&quot;&gt;&lt;/label&gt; 定义表单元素的标签，与 for 属性相对应
@@ -166,10 +171,12 @@
                         &lt;optgroup&gt;&lt;/optgroup&gt; 用于分组相关选项
                         </code></pre>
                         <h2>换行符</h2>
-                        <pre><code class="language-html">&lt;br /&gt;
+                        <pre><code class="language-html">
+                        &lt;br /&gt;
                         </code></pre>
                         <h2>图片</h2>
-                        <pre><code class="language-html">如果图片存储在您的工作空间中，可以像这样添加图片：
+                        <pre><code class="language-html">
+                        如果图片存储在您的工作空间中，可以像这样添加图片：
                         &lt;img src=&quot;img_girl.jpg&quot; width=&quot;400&quot; height=&quot;400&quot; /&gt;
                         或者您可以直接从浏览器添加图片，像这样：
                         &lt;img
@@ -182,7 +189,8 @@
                          <img src="https://cdn.mos.cms.futurecdn.net/hFm4iWXhbw4c4rdcMH8tUD.jpg"  width="400" height="400">
                         
                         <h2>HTML头部</h2>
-                        <pre><code class="language-html">&lt;head&gt;&lt;/head&gt; 元数据的容器
+                        <pre><code class="language-html">
+                        &lt;head&gt;&lt;/head&gt; 元数据的容器
                         &lt;title&gt;&lt;/title&gt; 项目的标题
                         &lt;link rel=&quot;stylesheet&quot; href=&quot;&quot; /&gt; 链接到外部样式表
                         &lt;meta /&gt; 指定字符集、页面描述、关键字、文档作者和视口设置
@@ -191,21 +199,25 @@
                         &lt;script&gt;&lt;/script&gt; 定义客户端 JavaScript
                         </code></pre>
                         <h2>水平分隔线</h2>
-                        <pre><code class="language-html">&lt;hr /&gt;
+                        <pre><code class="language-html">
+                        &lt;hr /&gt;
                         </code></pre>
                         <h2>锚点</h2>
-                        <pre><code class="language-html">&lt;a href=&quot;url&quot;&gt;链接文本&lt;/a&gt; 链接到 url
+                        <pre><code class="language-html">
+                        &lt;a href=&quot;url&quot;&gt;链接文本&lt;/a&gt; 链接到 url
                         &lt;a href=&quot;#yourSection&quot;&gt;链接文本&lt;/a&gt; 链接到页面中的某一部分
                         &lt;a href=&quot;url&quot; target=&quot;_blank&quot;&gt;链接文本&lt;/a&gt; 在新标签页中打开链接
                         </code></pre>
                         <h2>表格</h2>
-                        <pre><code class="language-html">&lt;table&gt;&lt;/table&gt; 定义表格
+                        <pre><code class="language-html">
+                        &lt;table&gt;&lt;/table&gt; 定义表格
                         &lt;tr&gt;&lt;/tr&gt; 定义表格行
                         &lt;th&gt;&lt;/th&gt; 定义表格标题
                         &lt;td&gt;&lt;/td&gt; 定义表格数据
                         </code></pre>
                         <h2>列表</h2>
-                        <pre><code class="language-html">&lt;ul&gt;&lt;/ul&gt; 定义无序列表
+                        <pre><code class="language-html">
+                        &lt;ul&gt;&lt;/ul&gt; 定义无序列表
                         &lt;ol&gt;&lt;/ol&gt; 定义有序列表
                         &lt;li&gt;&lt;/li&gt; 定义列表项
                         &lt;dl&gt;&lt;/dl&gt; 定义描述列表
@@ -213,32 +225,38 @@
                         &lt;dd&gt;&lt;/dd&gt; 描述描述列表中的术语
                         </code></pre>
                         <h2>按钮</h2>
-                        <pre><code class="language-html">&lt;button&gt;&lt;/button&gt; 定义可点击的按钮
+                        <pre><code class="language-html">
+                        &lt;button&gt;&lt;/button&gt; 定义可点击的按钮
                         </code></pre>
                         <h2>SVG</h2>
-                        <pre><code class="language-html">&lt;svg&gt;&lt;/svg&gt; SVG 图形的容器
+                        <pre><code class="language-html">
+                        &lt;svg&gt;&lt;/svg&gt; SVG 图形的容器
                         </code></pre>
                         <h3>视频标签</h3>
-                        <pre><code class="language-html">&lt;video controls src=&quot;movie.mp4&quot; type=&quot;video/mp4&quot;&gt;
+                        <pre><code class="language-html">
+                        &lt;video controls src=&quot;movie.mp4&quot; type=&quot;video/mp4&quot;&gt;
                           该浏览器不支持该视频格式！
                         &lt;/video&gt;
                         </code></pre>
                         <h2>无序列表</h2>
-                        <pre><code class="language-html">&lt;ul&gt;
+                        <pre><code class="language-html">
+                          &lt;ul&gt;
                           &lt;li&gt;项目1&lt;/li&gt;
                           &lt;li&gt;项目2&lt;/li&gt;
                           &lt;li&gt;项目3&lt;/li&gt;
                         &lt;/ul&gt;
                         </code></pre>
                         <h2>有序列表</h2>
-                        <pre><code class="language-html">&lt;ol&gt;
+                        <pre><code class="language-html">
+                          &lt;ol&gt;
                           &lt;li&gt;项目1&lt;/li&gt;
                           &lt;li&gt;项目2&lt;/li&gt;
                           &lt;li&gt;项目3&lt;/li&gt;
                         &lt;/ol&gt;
                         </code></pre>
                         <h2>HTML语义化</h2>
-                        <pre><code class="language-html">&lt;header&gt;&lt;/header&gt; 指定文档或部分的标题
+                        <pre><code class="language-html">
+                        &lt;header&gt;&lt;/header&gt; 指定文档或部分的标题
                         &lt;main&gt;&lt;/main&gt; 指定文档的主要内容
                         &lt;footer&gt;&lt;/footer&gt; 定义文档或部分的页脚
                         &lt;article&gt;&lt;/article&gt; 定义独立、自包含的内容
@@ -248,10 +266,11 @@
                         &lt;section&gt;&lt;/section&gt; 定义文档中的一个部分
                         </code></pre>
                         <h2>语义化媒体标签</h2>
-                        <pre><code class="language-html">&lt;figure&gt;&lt;/figure&gt; 嵌入带注释的图片、插图、照片、代码等。
+                        <pre><code class="language-html">
+                        &lt;figure&gt;&lt;/figure&gt; 嵌入带注释的图片、插图、照片、代码等。
                         &lt;figcaption&gt;&lt;/figcaption&gt; 为 &lt;figure&gt; 添加标题/注释。
                         &lt;picture&gt;&lt;/picture&gt; 响应式图像插入，允许开发人员为不同的上下文提供不同的图像。
-                        
+    
                         &lt;video poster=&quot; &quot; autoplay loop controls &gt;&lt;/video&gt;嵌入视频到网页中。
                            poster 是视频播放前显示的图像路径。
                            autoplay 自动播放视频。
@@ -262,14 +281,17 @@
                         &lt;source&gt;&lt;/source&gt; 必须在 &lt;picture&gt;、&lt;video&gt; 或 &lt;audio&gt; 内部定义不同版本的内容。
                         </code></pre>
                         <h2>音频</h2>
-                        <pre><code class="language-html">&lt;audio&gt;&lt;/audio&gt; HTML &lt;audio&gt; 元素用于嵌入声音内容。
+                        <pre><code class="language-html">
+                        &lt;audio&gt;&lt;/audio&gt; HTML &lt;audio&gt; 元素用于嵌入声音内容。
                         </code></pre>
                         <h2>脚本</h2>
-                        <pre><code class="language-html">&lt;canvas&gt;&lt;/canvas&gt; 与 canvas 脚本 API 或 WebGL API 结合使用，用于绘制图形和动画。
+                        <pre><code class="language-html">
+                        &lt;canvas&gt;&lt;/canvas&gt; 与 canvas 脚本 API 或 WebGL API 结合使用，用于绘制图形和动画。
                         &lt;noscript&gt;&lt;/noscript&gt; 定义一个 HTML 部分，如果页面上某个脚本类型不受支持或脚本当前处于关闭状态，则插入该部分。
                         </code></pre>
                         <h3>表情符号</h3>
-                        <pre><code class="language-html">&lt;p style=&quot;font-size:48px&quot;&gt;&amp;#128512; &amp;#128516; &amp;#128525; &amp;#128151;&lt;/p&gt;
+                        <pre><code class="language-html">
+                        &lt;p style=&quot;font-size:48px&quot;&gt;&amp;#128512; &amp;#128516; &amp;#128525; &amp;#128151;&lt;/p&gt;
                         </code></pre>
                         <p>输出结果：</p>
                         <p style="font-size:48px">&#128512; &#128516; &#128525; &#128151;</p>
