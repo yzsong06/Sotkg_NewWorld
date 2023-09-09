@@ -117,13 +117,13 @@
                         </div>
                         <p>
                             RTheme是我最近给我个人站点换的一个很不错的站点主题，他的启动难度并不算很高。<br>
-                            但我再给站点配置一些边缘服务时（详见<a href="https://ravelloh.top/articles/20230815/#配置边缘服务"></a>）<br>
+                            但我再给站点配置一些边缘服务时（详见<a href="https://ravelloh.top/articles/20230815/#配置边缘服务">#配置边缘服务</a>）<br>
                             因为我个人技术也不算很高，所以遇到了一些问题，虽然后面得以顺利解决，但我决定写下了这篇文章。<br>
                             希望那些想用本主题建站的像我这样的半小白们能够更快的上手这方面的配置，本文也是用一些小白式方案来解决配置服务时的问题<br>
                         </p>
                         <h3>配置Twikoo评论服务</h3>
 <p>这里其实作者文档写的并不算很难，只要你有一个Twikoo都能很快理解他写的意思。</p>
-<p>没有Twikoo的请参考官方文档：<a href="https://twikoo.js.org%EF%BC%8C%E6%9D%A5%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E3%80%82">https://twikoo.js.org，来搭建一个。</a></p>
+<p>没有Twikoo的请参考官方文档：<a href="https://twikoo.js.org">Twikoo官方文档</a></p>
 <p>那么我们再来看一下主题作者的原话：</p>
 <p>默认情况下，Twikoo处于开启状态。</p>
 <p>要使用Twikoo，只需要在<code>/asstes/js/display.js</code>（作者这里打错了，应该是assets）中，修改函数<code>loadComment()</code>的定义，将其中包含的<code>envId: &#39;&#39;</code>(大概在第304行左右)修改为<code>envId: &#39;这里填写你的envId&#39;</code></p>
@@ -152,14 +152,14 @@ function initComment() {
 <p>获取你的token(详见<a href="https://umami.is/docs/authentication">Umami的官方文档</a>)。</p>
 </blockquote>
 <p>这两个都不算很简单。</p>
-<p>关于发请求获取“你的token”，这里我个人的建议方案是找一个网页模拟请求服务（我用的是<a href="http://coolaf.com/tool/post%EF%BC%89%EF%BC%8C%E7%84%B6%E5%90%8EUmami%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%E4%B8%AD%E7%94%A8%E7%9A%84%E6%98%AFJson%E6%9D%A5%E5%8F%91%E9%80%81%E7%9A%84%E8%AF%B7%E6%B1%82%EF%BC%8C%E6%89%80%E4%BB%A5%E6%88%91%E4%BB%AC%E5%9C%A8%E8%BF%99%E4%B8%AA%E7%BD%91%E7%AB%99%E8%A6%81%E6%8A%8A%E6%A8%A1%E5%BC%8F%E5%88%87%E6%88%90%60Raw%60%EF%BC%8C%E6%A0%BC%E5%BC%8F%E6%98%AF%60json(application/json)%60%EF%BC%8C%E7%84%B6%E5%90%8E%E6%88%91%E4%BB%AC%E7%9C%8B%E4%B8%80%E4%B8%8BUmami%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%E5%86%99%E7%9A%84%EF%BC%9A">http://coolaf.com/tool/post），然后Umami官方文档中用的是Json来发送的请求，所以我们在这个网站要把模式切成`Raw`，格式是`json(application/json)`，然后我们看一下Umami官方文档写的：</a></p>
+<p>关于发请求获取“你的token”，这里我个人的建议方案是找一个网页模拟请求服务（我用的是<a href="http://coolaf.com/tool/post">http://coolaf.com/tool/post</a>），然后Umami官方文档中用的是Json来发送的请求，所以我们在这个网站要把模式切成`Raw`，格式是`json(application/json)`，然后我们看一下Umami官方文档写的：</p>
 <blockquote>
 <p>First you need to get a <em>token</em> in order to make API requests. You need to make a <code>POST</code> request to the <code>/api/auth/login</code> endpoint with the following data</p>
 </blockquote>
 <p>翻译过来是：</p>
 <blockquote>
 <p>首先，您需要获取令牌才能发出 API 请求。您需要使用以下数据向 <code>/api/auth/login</code> 终端节点发出 <code>POST</code> 请求</p>
-</blockquote>
+</blockquot>
 <p>这里首先先解释一下：你要发送到的节点地址其实就是<code>https://（Umami后端地址）/api/auth/login</code>，我们把这个链接填到网页工具上面的URL填写框里面。</p>
 <p>下面Json填写</p>
 <pre><code class="language-json">
