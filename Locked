@@ -34,6 +34,7 @@
     <nav>
         <a href="/" class="loading" style="--i: 5" id="nav-home">主页</a>     
         <a href="/articles/" class="loading" style="--i: 3" id="nav-articles">文章</a>
+        <a href="/talks/" class="loading" style="--i: 4" id="nav-talks">文章</a>
         <a href="/friends/" class="loading" style="--i: 2" id="nav-friends">友链</a>
         <a href="/about/" class="loading" style="--i: 1" id="nav-about">关于</a>
     </nav>
@@ -60,3 +61,17 @@
 </menu>
 
 <div class="listlines" >
+
+//ABOUT
+<div class="texts full overflow center">
+    <h2 class="center">ABOUT / 关于</h2>
+    <span class="virgule center">
+        心有多宽，世界就有多远。
+    </span>
+    <br>
+    <div class="full center textarea" style="margin: 0 auto">
+        Hi~我是一只鬆，欢迎你来到我的小站。<br>
+        我会在这里分享一些我的个人观点。<br>
+        本站已运行<span id="uptime2">几千</span>个日夜，使用<a href="https://github.com/RavelloH/RTheme" class="noline">RTheme V3</a>主题框架。<br>
+    </div>
+</div>
