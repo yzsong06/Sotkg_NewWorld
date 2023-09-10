@@ -137,18 +137,18 @@
                         上方模板应该是<code>OTHER</code>，然后我们打开<code>BUILD COMMAND</code>和<code>INSTALL COMMAND</code>右边的<code>OVERRIDE</code>让我们能够覆盖默认指令</p>
                         <p>然后<code>INSTALL COMMAND</code>设置为：</p>
                         <pre><code class="language-javasprint">
-                            npm install
+                        npm install
                         </code></pre>
                         <p><code>BUILD COMMAND</code>设置为：</p>
                         <pre><code class="language-javasprint">
-                            cd program &amp;&amp; node search.js &amp;&amp; node feed.js &amp;&amp; node fileList.js
+                        cd program &amp;&amp; node search.js &amp;&amp; node feed.js &amp;&amp; node fileList.js
                         </code></pre>
                         <p>这样，我们就让Vercel和GitHub Action完成了部署的交接，此时修改仓库你就会看到，只进行了一次构建</p>
                         <h3>Netlify</h3>
                         <p>Netlify大体与Vercel相似，但它只有部署指令的设置，因为国内访问稳定性与速度不佳我也没试过。不过应该是：<img src="./netlify.jpeg" alt="image">
                         把<code>Build Command</code>设置为</p>
                         <pre><code class="language-javasprint">
-                            cd program &amp;&amp; node search.js &amp;&amp; node feed.js &amp;&amp; node fileList.js
+                        cd program &amp;&amp; node search.js &amp;&amp; node feed.js &amp;&amp; node fileList.js
                         </code></pre>
                         <p>应该吧，如果有问题请在评论区提出或指正。</p>
                         <h3>Cloudflare Page</h3>
@@ -156,7 +156,7 @@
                         <img src="./cloudflare.png" alt="image">
                         <code>框架预设</code>选择<code>无</code>，<code>部署命令</code>一样是：</p>
                         <pre><code class="language-javasprint">
-                            cd program &amp;&amp; node search.js &amp;&amp; node feed.js &amp;&amp; node fileList.js
+                        cd program &amp;&amp; node search.js &amp;&amp; node feed.js &amp;&amp; node fileList.js
                         </code></pre>
                         <p>以上就是几个主流的静态页面托管的部署设置了，如果你有其他想法也可以在评论区提出或指出问题</p>
                         
