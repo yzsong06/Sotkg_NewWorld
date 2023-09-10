@@ -24,8 +24,9 @@
     <link rel="preload" href="../assets/css/style.css" as="style" />
     <link rel="preload" href="../assets/css/iconfont.css" as="style" />
     <link rel="preload" href="../assets/images/avatar.png" as="image" />
-    <script defer type="text/javascript" src="../assets/js/loading.js"></script>
     <script src="https://npm.onmicrosoft.cn/qexo-static@1.6.0/hexo/talks.js"></script>
+    <script defer type="text/javascript" src="../assets/js/loading.js"></script>
+    
     
 
     <!-- CSS -->
@@ -100,15 +101,32 @@
                 </div>
                 <div class="listlines">
                 <div id="qexot-placeholder">
-                    <script>
-                    window.onload = function () {
-                    var placeholder = document.getElementById("qexot-placeholder");
-                    if (placeholder) {
-                    placeholder.outerHTML = '<div class="qexot-talks-container" id="qexot"></div>';
-                    showQexoTalks("qexot", "https://qexo.sotkg.cn", 5);
-                    }   
-                        };
-                    </script>
+                    <!-- 引入脚本，并在每次 pjax 完成时重新加载组件 -->
+<script>
+    // 获取组件容器和占位符元素
+    var container = document.createElement("div");
+    container.id = "qexot";
+    container.className = "qexot-talks-container";
+    var placeholder = document.getElementById("qexot-placeholder");
+
+    // 当页面加载完成和 pjax 完成时执行的函数
+    function loadQexoTalks() {
+        // 检查占位符元素是否存在
+        if (placeholder && !document.getElementById("qexot")) {
+            // 替换占位符元素并调用 showQexoTalks 函数来展示组件
+            placeholder.parentNode.replaceChild(container, placeholder);
+            showQexoTalks("qexot", "https://qexo.sotkg.cn", 5);
+        }
+    }
+
+    // 在页面加载完成时执行一次
+    loadQexoTalks();
+
+    // 在 pjax 完成时重新执行
+    if (window.history && window.history.pushState) {
+        window.addEventListener("popstate", loadQexoTalks);
+    }
+</script>
 
                 </div>
 
