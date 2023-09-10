@@ -1,0 +1,30 @@
+//index.html line 96
+<a class="button" href="/works/">Works / 作品 ></a>
+// works/index.html line 101
+<div class="listlines">
+                    
+                    <div class="loading listprogram">
+                        <div class="work-program" onclick="workShow(this)">
+                            <p>
+                                <h4>高木Wiki信息站</h4>
+                            </p>
+                            <p class="work-describe">
+                                -- 基于VuePress的Wiki＆信息站项目
+                            </p>
+                            <aside doc='https://raw.githubusercontent.com/TakagisanReposOrg/VuePress-TakagiWiki/main/README.md'>
+                                <div class="work-info">
+                                    <div class="imgcard">
+                                        <img src="https://wiki.takagi3.cn/homepage.jpg" alt="Page shot" loading='lazy' onload="imgLoad(this)" />
+                                    </div>
+                                </div>
+                                <p class="work-urls">
+                                    <span class="i_small ri:link"></span>
+                                    >> <a href="https://github.com/TakagisanReposOrg/VuePress-TakagiWiki">Github</a> \ <a href="https://sotkg.cn/articles/20230815/">相关文章</a>
+                                </p>
+                            </aside>
+                            <p class="work-language">
+                                <span class="i_small ri:code-s-slash-line"></span> <span>JavaScript,NodeJs</span>
+                            </p>
+                        </div>
+                        <hr>
+                    </div>

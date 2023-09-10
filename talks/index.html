@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <title>Works / 作品 | 一只鬆の小站</title>
+    <title>Talks / 说说 | 一只鬆の小站</title>
     <meta name="keywords" content="" />
-    <meta name="description" content="关于 | 一只鬆の小站" />
+    <meta name="description" content="说说 | 一只鬆の小站" />
     <meta name="author" content="一只鬆" />
     <meta name="pagetype" content="works-index" />
     <meta name="theme-color" content="#111111" />
@@ -25,9 +25,11 @@
     <link rel="preload" href="../assets/css/iconfont.css" as="style" />
     <link rel="preload" href="../assets/images/avatar.png" as="image" />
     <script defer type="text/javascript" src="../assets/js/loading.js"></script>
-
+    <script src="https://npm.onmicrosoft.cn/qexo-static@1.6.0/hexo/talks.js"></script>
+    
 
     <!-- CSS -->
+    <link rel="stylesheet" href="https://npm.onmicrosoft.cn/qexo-static@1.6.0/hexo/talks.css">
     <link rel="stylesheet" href="../assets/css/style.css" type="text/css" media="all" />
     <link rel="stylesheet" href="../assets/css/iconfont.css" type="text/css" />
     <noscript>
@@ -73,7 +75,7 @@
                     <!-- nav start -->
                     <nav>
                         <a href="/" class="loading" style="--i: 5" id="nav-home">HOME</a>
-                        <a href="/works/" class="loading" style="--i: 4" id="nav-works">WORKS</a>
+                        <a href="/talks/" class="loading" style="--i: 4" id="kakao-talk-fill">TALKS</a>
                         <a href="/articles/" class="loading" style="--i: 3" id="nav-articles">ARTICLES</a>
                         <a href="/friends/" class="loading" style="--i: 2" id="nav-friends">FRIENDS</a>
                         <a href="/about/" class="loading" style="--i: 1" id="nav-about">ABOUT</a>
@@ -87,44 +89,33 @@
         <div id="main" class="loading">
             <div id='viewmap'>
                 <div class="texts half loading" id="showarea">
-                    <h3>WORKS / <wbr>项目</h3>
+                    <h3>TALKS / <wbr>说说</h3>
                     <span class="virgule">
-                        收录 & 索引个人项目
+                        个人随笔 ＆ 生活日常
                     </span>
                     <span class="virgule" id="numOfWorks">//</span>
                     <div class="button-list">
                         <a class="button noline" href="https://github.com/yzsong06?tab=repositories"><span class="i_small ri:github-line"></span> Github ></a>
                     </div>
                 </div>
-
-
                 <div class="listlines">
-                    
-                    <div class="loading listprogram">
-                        <div class="work-program" onclick="workShow(this)">
-                            <p>
-                                <h4>高木Wiki信息站</h4>
-                            </p>
-                            <p class="work-describe">
-                                -- 基于VuePress的Wiki＆信息站项目
-                            </p>
-                            <aside doc='https://raw.githubusercontent.com/TakagisanReposOrg/VuePress-TakagiWiki/main/README.md'>
-                                <div class="work-info">
-                                    <div class="imgcard">
-                                        <img src="https://wiki.takagi3.cn/homepage.jpg" alt="Page shot" loading='lazy' onload="imgLoad(this)" />
-                                    </div>
-                                </div>
-                                <p class="work-urls">
-                                    <span class="i_small ri:link"></span>
-                                    >> <a href="https://github.com/TakagisanReposOrg/VuePress-TakagiWiki">Github</a> \ <a href="https://sotkg.cn/articles/20230815/">相关文章</a>
-                                </p>
-                            </aside>
-                            <p class="work-language">
-                                <span class="i_small ri:code-s-slash-line"></span> <span>JavaScript,NodeJs</span>
-                            </p>
-                        </div>
-                        <hr>
-                    </div>
+                <div id="qexot-placeholder">
+                    <script>
+                    window.onload = function () {
+                    var placeholder = document.getElementById("qexot-placeholder");
+                    if (placeholder) {
+                    placeholder.outerHTML = '<div class="qexot-talks-container" id="qexot"></div>';
+                    showQexoTalks("qexot", "https://qexo.sotkg.cn", 5);
+                    }   
+                        };
+                    </script>
+
+                </div>
+
+                </div>
+
+
+                
                     
                
                     
@@ -150,7 +141,7 @@
                     </noscript>
                 </div>
             </div>
-        </footer>
+        </footer> 
     </section>
     <section id="sidebar">
         <div id="sidebar-top">
