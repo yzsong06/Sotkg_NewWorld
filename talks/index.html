@@ -30,7 +30,7 @@
     
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://npm.onmicrosoft.cn/qexo-static@1.6.0/hexo/talks.css">
+    <link rel="stylesheet" href="https://npm.onmicrosoft.cn/qexo-static@1.6.0/hexo/talks.css" type="text/css" media="all">
     <link rel="stylesheet" href="../assets/css/style.css" type="text/css" media="all" />
     <link rel="stylesheet" href="../assets/css/iconfont.css" type="text/css" />
     <noscript>
@@ -99,24 +99,21 @@
                         <a class="button noline" href="https://github.com/yzsong06?tab=repositories"><span class="i_small ri:github-line"></span> Github ></a>
                     </div>
                 </div>
+                <div id="qexot" class="listlines"></div>
                 
-                <div class="listlines">
-                    <div id="qexot"></div>
-                </div>
+                
                 
                 <script>
-                  // 在加载完毕后进行操作
-                  window.addEventListener('load', function() {
                     // 动态创建<script>元素
                     var script = document.createElement('script');
                     script.src = 'https://npm.onmicrosoft.cn/qexo-static@1.6.0/hexo/talks.js';
                     document.body.appendChild(script);
                 
                     // 在脚本加载成功后调用显示函数
-                    script.addEventListener('load', function() {
+                    window.addEventListener('load', function() {
                       showQexoTalks("qexot", "https://qexo.sotkg.cn", 5);
                     });
-                  });
+
                 </script>                 
                 </div>
 

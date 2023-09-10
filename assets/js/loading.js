@@ -8,7 +8,7 @@ domLoadShade = document.querySelector('#load-shade');
 trustDomain = [
     'sotkg.cn'
 ];
-musicApiList = ['https://music.api.sotkg.cn/cloudsearch?keywords='];
+musicApiList = ['https://music.api.ravelloh.top/cloudsearch?keywords='];
 musicAvailableApiList = [];
 const baseStr = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
 
