@@ -99,22 +99,25 @@
                         <a class="button noline" href="https://github.com/yzsong06?tab=repositories"><span class="i_small ri:github-line"></span> Github ></a>
                     </div>
                 </div>
-                <div class="qexo-container">
-                <script>
-                    function main() {
-                        addScript('https://npm.onmicrosoft.cn/qexo-static@1.6.0/hexo/talks.js', callback);
-                    }
-                    function callback() {
-                        // 呈现脚本的内容到容器中
-                        showQexoTalks("qexot", "https://qexo.sotkg.cn", 5);
-                        }
-
-                        // 在页面加载完成后执行 main 函数
-                        window.onload = main;
-                </script>
-                </div>
+                
                 <div class="listlines">
-                                          
+                    <div id="qexot"></div>
+                </div>
+                
+                <script>
+                  // 在加载完毕后进行操作
+                  window.addEventListener('load', function() {
+                    // 动态创建<script>元素
+                    var script = document.createElement('script');
+                    script.src = 'https://npm.onmicrosoft.cn/qexo-static@1.6.0/hexo/talks.js';
+                    document.body.appendChild(script);
+                
+                    // 在脚本加载成功后调用显示函数
+                    script.addEventListener('load', function() {
+                      showQexoTalks("qexot", "qexo.sotkg.cn", 5);
+                    });
+                  });
+                </script>                 
                 </div>
 
                 </div>
