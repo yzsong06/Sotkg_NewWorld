@@ -24,7 +24,6 @@
     <link rel="preload" href="../assets/css/style.css" as="style" />
     <link rel="preload" href="../assets/css/iconfont.css" as="style" />
     <link rel="preload" href="../assets/images/avatar.png" as="image" />
-    <script src="https://npm.onmicrosoft.cn/qexo-static@1.6.0/hexo/talks.js"></script>
     <script defer type="text/javascript" src="../assets/js/loading.js"></script>
     
     
@@ -99,35 +98,22 @@
                         <a class="button noline" href="https://github.com/yzsong06?tab=repositories"><span class="i_small ri:github-line"></span> Github ></a>
                     </div>
                 </div>
+                <div class="qexo-container">
+                <script>
+                    function main() {
+                        addScript('https://npm.onmicrosoft.cn/qexo-static@1.6.0/hexo/talks.js', callback);
+                    }
+                    function callback() {
+                        // 呈现脚本的内容到容器中
+                        showQexoTalks("qexot", "${SITE}", 5);
+                        }
+
+                        // 在页面加载完成后执行 main 函数
+                        window.onload = main;
+                </script>
+                </div>
                 <div class="listlines">
-                <div id="qexot-placeholder">
-                    <!-- 引入脚本，并在每次 pjax 完成时重新加载组件 -->
-<script>
-    // 获取组件容器和占位符元素
-    var container = document.createElement("div");
-    container.id = "qexot";
-    container.className = "qexot-talks-container";
-    var placeholder = document.getElementById("qexot-placeholder");
-
-    // 当页面加载完成和 pjax 完成时执行的函数
-    function loadQexoTalks() {
-        // 检查占位符元素是否存在
-        if (placeholder && !document.getElementById("qexot")) {
-            // 替换占位符元素并调用 showQexoTalks 函数来展示组件
-            placeholder.parentNode.replaceChild(container, placeholder);
-            showQexoTalks("qexot", "https://qexo.sotkg.cn", 5);
-        }
-    }
-
-    // 在页面加载完成时执行一次
-    loadQexoTalks();
-
-    // 在 pjax 完成时重新执行
-    if (window.history && window.history.pushState) {
-        window.addEventListener("popstate", loadQexoTalks);
-    }
-</script>
-
+                                          
                 </div>
 
                 </div>
