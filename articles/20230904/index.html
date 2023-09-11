@@ -126,7 +126,7 @@
 <p>没有Twikoo的请参考官方文档：<a href="https://twikoo.js.org">Twikoo官方文档</a></p>
 <p>那么我们再来看一下主题作者的原话：</p>
 <p>默认情况下，Twikoo处于开启状态。</p>
-<p>要使用Twikoo，只需要在<code>/asstes/js/display.js</code>（作者这里打错了，应该是assets）中，修改函数<code>loadComment()</code>的定义，将其中包含的<code>envId: &#39;&#39;</code>(大概在第304行左右)修改为<code>envId: &#39;这里填写你的envId&#39;</code></p>
+<p>要使用Twikoo，只需要在<code>/assets/js/display.js</code>中，修改函数<code>loadComment()</code>的定义，将其中包含的<code>envId: &#39;&#39;</code>(大概在第304行左右)修改为<code>envId: &#39;这里填写你的envId&#39;</code></p>
 <p>上面函数的定义还是比较好找的，在主题文件目录下/assets/js/display.js，找到大概在下面这片区域（大约在304行左右）的代码，在这个<code>envId: &#39;&#39;</code>的单引号里面填写你的Twikoo后端服务的网址就可以了。</p>
 <pre><code class="language-javascript">
 // 评论初始化
@@ -185,7 +185,7 @@ function initComment() {
 <p>接下来要获取你的“共享token”，你需要一个能打开F12控制台的浏览器，我使用的是Chrome。</p>
 <p>这里作者原话是：</p>
 <blockquote>
-<p>获取你的共享token(创建你的站点的贡献链接（共享链接），访问并用开发者工具查看网络信息，复制任意一个含有<code>x-umami-share-token</code>的请求头的网络请求的<code>x-umami-share-token</code>值)。</p>
+<p>获取你的共享token(创建你的站点的共享链接，访问并用开发者工具查看网络信息，复制任意一个含有<code>x-umami-share-token</code>的请求头的网络请求的<code>x-umami-share-token</code>值)。</p>
 </blockquote>
 <p>首先我们得打开你的Umami，然后找到站点设置里的“共享链接”，打开这个功能后，你会在下面得到一个链接，把这个链接复制到浏览器地址栏里然后打开它（建议用无痕式标签页模式），按下你键盘上的<code>F12</code>打开你的浏览器控制台，找到<code>网络</code>选项，这里应该会有一个文件列表（没有的话按一下<code>Ctrl+R</code>刷新页面），然后会有一个令人头疼的问题是：你去哪里找这个Token？</p>
 <p>我之前曾尝试过直接搜索<code>x-umami-share-token</code>，然后搜不到，最后我个人给的办法是：</p>
@@ -223,8 +223,8 @@ function initComment() {
 </blockquote>
 <p>按照他说的修改即可，都做完了之后。</p>
 <p>我是真的要恭喜你，你已经完成了基本的边缘配置</p>
-<h3>关于作者没有写出的</h3>
-<p>实际上，作者少写了点东西，我们需要找到<code>assets/js/i18n.js</code>文件，在其中找到这一些（大约在第179行），把它里面你已经配置的边缘设置打开它，保证主题侧边栏设置里能够正常显示这些相关设置。</p>
+<h3>设置i18n.js</h3>
+<p>我们需要找到<code>assets/js/i18n.js</code>文件，在其中找到这一些（大约在第179行），把它里面你已经配置的边缘设置打开它，保证主题侧边栏设置里能够正常显示这些相关设置。</p>
 <pre><code class="language-javascript">
     function valueSettingItems() {
     return [
